@@ -68,7 +68,7 @@ for (const [slug, p] of Object.entries(pages)) {
     assert.ok(stats.cards.every(c => c.titleSize === 24 && c.parts.length === 2), 'Separate highlighted values, explanations and sources');
   }
   if (p.newService) {
-    assert.equal($('.service-coverage').length, 0, `${slug}: full-width hero`);
+    assert.equal($('.service-coverage').length, p.hero.split ? 1 : 0, `${slug}: hero layout`);
     for (const s of p.sections) {
       if (s.layout === 'capped-roles') assert.equal(s.cards.length, 3, `${slug}: three complete role cards`);
       if (s.layout === 'coverage-five') { assert.equal(s.cards.length, 5); assert.equal(s.columns, 5); }

@@ -748,7 +748,7 @@
   position: absolute;
   z-index: -1;
   inset: var(--section-top) 0 var(--section-bottom);
-  background: #262626 url('/images/mode-pattern.svg') no-repeat right center / 1100px;
+  background: #262626 var(--cover-image, url('/images/mode-pattern.svg')) no-repeat right center / cover;
 }
 .service-section--cover > .container {
   min-height: var(--cover-height, 300px);
@@ -761,6 +761,7 @@
 .service-section--cover .service-section__heading {
   border: 0;
   padding: 0;
+  max-width: var(--cover-copy-width, 1160px);
 }
 .service-section--cover .service-section__heading h2 {
   color: #eee;
@@ -809,6 +810,9 @@
 .control-service .service-section--standard-cards .service-cards--related .service-card__eyebrow { font-size: 14px; }
 .control-service .service-section--standard-cards.monitoring-numbers .service-card { padding: 24px; }
 .control-service .service-section--standard-cards.monitoring-numbers .service-copy:not(:last-child) { font-size: 18px; }
+.control-service .monitoring-numbers .service-copy:not(:last-child) { font-weight: var(--card-description-weight, 400); }
+.control-service .monitoring-numbers .service-card--split-statistic { gap: 0; }
+.control-service .monitoring-numbers .service-card--split-statistic .service-copy:last-child { margin-top: 16px; }
 @media (max-width: 1250px) {
   .control-service .service-hero__layout {
     grid-template-columns: 1.3fr 1fr;

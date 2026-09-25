@@ -1,0 +1,2 @@
+import fs from 'node:fs';import{load}from'cheerio';
+for(const slug of process.argv.slice(2)){const $=load(fs.readFileSync(`scripts/reference/calculators/${slug}.markup.txt`,'utf8'));console.log(slug);console.log($('input').map((_,e)=>e.attribs).get());console.log($('[data-q]').map((_,e)=>({q:$(e).attr('data-q'),text:$(e).text(),options:$(e).find('[data-val]').map((i,x)=>({value:$(x).attr('data-val'),selected:$(x).hasClass('selected'),text:$(x).text()})).get()})).get());console.log($('[id]').map((_,e)=>({id:e.attribs.id,cl:e.attribs.class})).get());}

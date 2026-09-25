@@ -23,6 +23,8 @@ function sectionStyle(section: ServiceSection) {
     backgroundColor: section.background,
     "--aside-image": section.asideImage ? `url('${section.asideImage}')` : undefined,
     "--cover-height": section.coverHeight,
+    "--cover-copy-width": section.coverCopyWidth ? `${section.coverCopyWidth}px` : undefined,
+    "--cover-image": section.coverImage ? `url('${section.coverImage}')` : undefined,
     "--section-pattern": section.patternImage ? `url('${section.patternImage}')` : undefined,
     paddingTop: `${section.paddingTop}px`,
     paddingBottom: `${section.paddingBottom}px`,
@@ -37,6 +39,7 @@ function sectionStyle(section: ServiceSection) {
       `service-page--${slug}`,
       { 'control-service': page.variant === 'control' },
       { 'new-service': page.newService, 'defence-service': page.theme === 'defence' },
+      { 'personal-service': page.personalService, 'personal-service--split-hero': page.hero.split },
     ]"
   >
     <section
@@ -55,10 +58,10 @@ function sectionStyle(section: ServiceSection) {
         <div class="service-hero__copy">
           <p class="service-eyebrow">{{ page.hero.eyebrow }}</p>
           <h1>{{ page.hero.title }}</h1>
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in page.hero.body"
             :key="part"
-            :html="part"
+            :text="part"
           />
           <button
             v-if="!page.hero.form"
@@ -125,7 +128,7 @@ function sectionStyle(section: ServiceSection) {
               <img
                 :src="page.hero.coverageIcons[index] || '/images/scan.svg'"
                 alt=""
-              /><ServiceRichText :html="item" />
+              /><ServiceFormattedText :text="item" />
             </li>
           </ul>
         </aside>
@@ -163,6 +166,7 @@ function sectionStyle(section: ServiceSection) {
         { 'service-section--editorial': section.editorialBody },
         { 'service-section--full-split-title': section.splitTitleFull },
         { 'service-section--stacked-headings': section.stackedHeadings },
+        { 'service-section--emphasis-description': section.descriptionEmphasis },
       ]"
       :style="sectionStyle(section)"
     >
@@ -177,6 +181,7 @@ function sectionStyle(section: ServiceSection) {
           </p>
           <h2
             v-if="section.title"
+            :style="{ '--heading-size': section.headingSize ? `${section.headingSize}px` : undefined, '--heading-weight': section.headingWeight }"
             :class="{ 'service-section__title--with-icon': section.icon }"
           >
             <img
@@ -189,26 +194,29 @@ function sectionStyle(section: ServiceSection) {
             <span>{{ section.title }}</span>
           </h2>
           <div v-if="section.body?.length" class="service-section__description">
-            <ServiceRichText
+            <ServiceFormattedText
               v-for="part in section.body"
               :key="part"
-              :html="part"
+              :text="part"
             />
           </div>
           <aside v-if="section.aside?.length" class="service-section__aside">
-            <ServiceRichText
+            <ServiceFormattedText
               v-for="part in section.aside"
               :key="part"
-              :html="part"
+              :text="part"
             />
           </aside>
         </header>
         <div v-else-if="section.body?.length" class="service-section__prose">
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in section.body"
             :key="part"
-            :html="part"
+            :text="part"
           />
+        </div>
+        <div v-if="section.images?.length" class="service-image-pair">
+          <img v-for="picture in section.images" :key="picture.src" :src="picture.src" :alt="picture.alt" :width="picture.width" :height="picture.height" loading="lazy" />
         </div>
         <ServiceComparison
           v-if="section.kind === 'compare'"
@@ -286,17 +294,17 @@ function sectionStyle(section: ServiceSection) {
         </nav>
         <div v-if="section.callout" class="service-callout">
           <h3><img v-if="section.callout.icon" :src="section.callout.icon" alt="" />{{ section.callout.title }}</h3>
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in section.callout.body"
             :key="part"
-            :html="part"
+            :text="part"
           />
         </div>
         <div v-if="section.note?.length" class="service-note">
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in section.note"
             :key="part"
-            :html="part"
+            :text="part"
           />
         </div>
         <div v-if="section.actions?.length" class="service-actions">
@@ -319,7 +327,7 @@ function sectionStyle(section: ServiceSection) {
           v-if="section.kind === 'faq'"
           :questions="section.questions || []"
         />
-        <ServiceRichText v-if="section.disclaimer" :html="section.disclaimer" class="service-disclaimer" />
+        <ServiceFormattedText v-if="section.disclaimer" :text="section.disclaimer" class="service-disclaimer" />
       </div>
     </section>
   </main>
@@ -328,3 +336,4 @@ function sectionStyle(section: ServiceSection) {
 <style src="./monitoring-page.css"></style>
 <style src="./control-service.css"></style>
 <style src="./defence-service.css"></style>
+<style src="./personal-service.css"></style>

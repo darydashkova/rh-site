@@ -1,5 +1,7 @@
 <script setup lang="ts">
 const { isOpen, open, close } = useConsultation();
+const route = useRoute();
+const articleOnly = computed(() => route.meta.articleOnly === true);
 const bannerVisible = ref(false);
 let bannerTimer: ReturnType<typeof setTimeout> | undefined;
 
@@ -14,10 +16,11 @@ onBeforeUnmount(() => clearTimeout(bannerTimer));
 <template>
   <div>
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <SiteHeader />
+    <SiteHeader v-if="!articleOnly" />
     <NuxtPage />
-    <SiteFooter />
+    <SiteFooter v-if="!articleOnly" />
     <button
+      v-if="!articleOnly"
       class="chat-launcher"
       aria-label="Request a consultation"
       @click="open"
@@ -29,7 +32,10 @@ onBeforeUnmount(() => clearTimeout(bannerTimer));
         <path d="M10 13h13M10 18h13M10 23h8" />
       </svg>
     </button>
-    <aside v-if="bannerVisible && !isOpen" class="consultation-banner">
+    <aside
+      v-if="bannerVisible && !isOpen && !articleOnly"
+      class="consultation-banner"
+    >
       <span>Want to Boost Your Online Reputation?</span>
       <button @click="open">Request a free consultation</button>
       <button

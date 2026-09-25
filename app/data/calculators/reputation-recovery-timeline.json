@@ -1,0 +1,142 @@
+[
+  {
+    "title": "What kind of incident are you dealing with?",
+    "subtitle": "",
+    "groups": [
+      {
+        "key": "incident",
+        "title": "What kind of incident are you dealing with?",
+        "options": [
+          {
+            "value": "reviews",
+            "label": "Negative reviews",
+            "description": "Local, review-driven damage"
+          },
+          {
+            "value": "leak",
+            "label": "Data breach",
+            "description": "Customer or internal data exposed"
+          },
+          {
+            "value": "media",
+            "label": "Media scandal",
+            "description": "Press coverage, moderate scale"
+          },
+          {
+            "value": "crisis",
+            "label": "Major public crisis",
+            "description": "Widespread, sustained coverage"
+          },
+          {
+            "value": "fake",
+            "label": "Fake news / disinformation",
+            "description": "False claims spreading"
+          },
+          {
+            "value": "competitor",
+            "label": "Competitor attack",
+            "description": "Targeted smear campaign"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "How far has it spread?",
+    "subtitle": "",
+    "groups": [
+      {
+        "key": "reach",
+        "title": "How far has it spread?",
+        "options": [
+          {
+            "value": "local",
+            "label": "Local",
+            "description": "One area or community"
+          },
+          {
+            "value": "regional",
+            "label": "Regional",
+            "description": "Multiple markets"
+          },
+          {
+            "value": "national",
+            "label": "National",
+            "description": "Wide, mainstream coverage"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Is the negative content still active?",
+    "subtitle": "",
+    "groups": [
+      {
+        "key": "active",
+        "title": "Is the negative content still active?",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes, ongoing",
+            "description": ""
+          },
+          {
+            "value": "no",
+            "label": "No, it's stopped",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Do you have positive content already out there?",
+    "subtitle": "",
+    "groups": [
+      {
+        "key": "positive",
+        "title": "Do you have positive content already out there?",
+        "options": [
+          {
+            "value": "yes",
+            "label": "Yes, some exists",
+            "description": ""
+          },
+          {
+            "value": "no",
+            "label": "Not really",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "What size is the company?",
+    "subtitle": "",
+    "groups": [
+      {
+        "key": "size",
+        "title": "What size is the company?",
+        "options": [
+          {
+            "value": "small",
+            "label": "Small / local",
+            "description": "Independent business"
+          },
+          {
+            "value": "mid",
+            "label": "Mid-size",
+            "description": "Regional or multi-location"
+          },
+          {
+            "value": "large",
+            "label": "Large / public",
+            "description": "Enterprise, listed company"
+          }
+        ]
+      }
+    ]
+  }
+]

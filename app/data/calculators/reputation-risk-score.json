@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Search visibility check",
+    "subtitle": "What does someone find when they search your brand?",
+    "groups": [
+      {
+        "key": "q1",
+        "title": "Does negative content — articles, complaints, court records — appear on page 1 of Google for your brand name?",
+        "options": [
+          {
+            "value": "0",
+            "label": "No — page 1 is clean and mostly controlled by us"
+          },
+          {
+            "value": "1",
+            "label": "1–2 neutral or ambiguous results I don't control"
+          },
+          {
+            "value": "2",
+            "label": "At least one clearly negative result in the top 5"
+          },
+          {
+            "value": "4",
+            "label": "Multiple negative results dominate page 1"
+          }
+        ]
+      },
+      {
+        "key": "q2",
+        "title": "How much of your first-page Google results do you control — your site, LinkedIn, official profiles?",
+        "options": [
+          {
+            "value": "0",
+            "label": "7+ out of 10 — we dominate the first page"
+          },
+          {
+            "value": "1",
+            "label": "4–6 out of 10"
+          },
+          {
+            "value": "3",
+            "label": "1–3 out of 10"
+          },
+          {
+            "value": "4",
+            "label": "Little to no control"
+          }
+        ]
+      },
+      {
+        "key": "q3",
+        "title": "Have you checked your brand's autocomplete suggestions and related searches recently?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — suggestions are neutral or positive"
+          },
+          {
+            "value": "1",
+            "label": "Yes — some concerning suggestions present"
+          },
+          {
+            "value": "3",
+            "label": "No — not checked in over 6 months"
+          },
+          {
+            "value": "4",
+            "label": "Never checked this"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "AI narrative audit",
+    "subtitle": "What do ChatGPT, Gemini, and Perplexity say about your brand?",
+    "groups": [
+      {
+        "key": "q4",
+        "title": "When you ask ChatGPT or Gemini about your brand, what do you get?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Accurate, positive, up-to-date description"
+          },
+          {
+            "value": "2",
+            "label": "Outdated info or role/position from 2+ years ago"
+          },
+          {
+            "value": "3",
+            "label": "Negative framing or adverse references cited"
+          },
+          {
+            "value": "4",
+            "label": "We've never checked this"
+          }
+        ]
+      },
+      {
+        "key": "q5",
+        "title": "Have you ever conducted an AI influence audit to assess how AI platforms describe your brand?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — within the last 6 months"
+          },
+          {
+            "value": "2",
+            "label": "Informally — we've checked manually a few times"
+          },
+          {
+            "value": "4",
+            "label": "No — AI monitoring is not part of our practice"
+          }
+        ]
+      },
+      {
+        "key": "q6",
+        "title": "Do you have verified, authoritative content — Wikipedia, major media profiles, official bios — that AI systems can reference?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — strong authoritative presence across multiple sources"
+          },
+          {
+            "value": "2",
+            "label": "Some — a few sources exist but not comprehensive"
+          },
+          {
+            "value": "4",
+            "label": "Little to none — AI likely has insufficient data"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Sentiment & velocity check",
+    "subtitle": "What is the tone and trajectory of coverage around your brand?",
+    "groups": [
+      {
+        "key": "q7",
+        "title": "What was the overall tone of media coverage about your brand in the last 90 days?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Predominantly positive or neutral"
+          },
+          {
+            "value": "2",
+            "label": "Mixed — some negative alongside positive"
+          },
+          {
+            "value": "4",
+            "label": "Predominantly negative or no media coverage at all"
+          }
+        ]
+      },
+      {
+        "key": "q8",
+        "title": "Has your brand been involved in any public controversy, crisis, or negative press in the last 12 months?",
+        "options": [
+          {
+            "value": "0",
+            "label": "No incidents"
+          },
+          {
+            "value": "2",
+            "label": "A minor incident that was resolved quickly"
+          },
+          {
+            "value": "4",
+            "label": "A significant crisis or ongoing negative coverage"
+          }
+        ]
+      },
+      {
+        "key": "q9",
+        "title": "How quickly does your team typically respond to negative mentions on social media?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Within 2–4 hours — we have a monitoring process"
+          },
+          {
+            "value": "2",
+            "label": "Within 24–48 hours"
+          },
+          {
+            "value": "4",
+            "label": "We find out days later or rely on chance"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Review health assessment",
+    "subtitle": "What do customers say about you in public, and what is the trend?",
+    "groups": [
+      {
+        "key": "q10",
+        "title": "What is your current average rating across Google, Trustpilot, and industry review platforms?",
+        "options": [
+          {
+            "value": "0",
+            "label": "4.5 or above"
+          },
+          {
+            "value": "1",
+            "label": "3.5–4.4"
+          },
+          {
+            "value": "3",
+            "label": "Below 3.5 or very few reviews"
+          },
+          {
+            "value": "2",
+            "label": "Not present on review platforms"
+          }
+        ]
+      },
+      {
+        "key": "q11",
+        "title": "Is your review rating trending upward, downward, or stable over the last 6 months?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Improving or stable above 4.0"
+          },
+          {
+            "value": "2",
+            "label": "Stable but flat with occasional negatives"
+          },
+          {
+            "value": "4",
+            "label": "Declining or not tracked"
+          }
+        ]
+      },
+      {
+        "key": "q12",
+        "title": "What percentage of negative reviews does your team respond to?",
+        "options": [
+          {
+            "value": "0",
+            "label": "90%+ — we respond to all or nearly all"
+          },
+          {
+            "value": "2",
+            "label": "50–89% — we respond to most"
+          },
+          {
+            "value": "4",
+            "label": "Below 50% or no process for this"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Compliance database scan",
+    "subtitle": "How do World-Check, LexisNexis, and legal records describe you?",
+    "groups": [
+      {
+        "key": "q13",
+        "title": "Has your company or leadership appeared in compliance databases (World-Check, LexisNexis, Dow Jones) or been flagged in regulatory searches?",
+        "options": [
+          {
+            "value": "0",
+            "label": "No flags — clean record verified recently"
+          },
+          {
+            "value": "2",
+            "label": "Outdated or minor entries since resolved"
+          },
+          {
+            "value": "5",
+            "label": "Active flags or unresolved regulatory issues"
+          },
+          {
+            "value": "3",
+            "label": "Never checked these databases"
+          }
+        ]
+      },
+      {
+        "key": "q14",
+        "title": "Are there any lawsuit mentions, court records, or legal proceedings associated with your brand that appear online?",
+        "options": [
+          {
+            "value": "0",
+            "label": "None that are publicly visible or relevant"
+          },
+          {
+            "value": "2",
+            "label": "Old records that surface occasionally"
+          },
+          {
+            "value": "5",
+            "label": "Active legal matters with public visibility"
+          }
+        ]
+      },
+      {
+        "key": "q15",
+        "title": "Has your organization undergone KYC/AML screening for a banking or investment relationship in the last 12 months?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — passed without issues"
+          },
+          {
+            "value": "2",
+            "label": "Yes — with some questions or delays"
+          },
+          {
+            "value": "3",
+            "label": "No — not applicable or not done"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Operational resilience check",
+    "subtitle": "How mature is your crisis response process?",
+    "groups": [
+      {
+        "key": "q16",
+        "title": "Does your organization have a documented crisis response protocol for reputation incidents?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — documented, tested, with clear ownership"
+          },
+          {
+            "value": "2",
+            "label": "Informal — general idea but nothing documented"
+          },
+          {
+            "value": "4",
+            "label": "No — we would figure it out if something happened"
+          }
+        ]
+      },
+      {
+        "key": "q17",
+        "title": "Has your brand experienced a significant reputation crisis in the last 24 months?",
+        "options": [
+          {
+            "value": "0",
+            "label": "No crisis events"
+          },
+          {
+            "value": "2",
+            "label": "A minor incident that was managed successfully"
+          },
+          {
+            "value": "4",
+            "label": "A significant crisis — effects are still visible"
+          }
+        ]
+      },
+      {
+        "key": "q18",
+        "title": "Do you have 24/7 monitoring that would alert you to a reputational signal within hours of it appearing?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Yes — real-time monitoring with tiered alerts"
+          },
+          {
+            "value": "2",
+            "label": "Basic Google Alerts or social notifications only"
+          },
+          {
+            "value": "4",
+            "label": "No monitoring infrastructure in place"
+          }
+        ]
+      },
+      {
+        "key": "q19",
+        "title": "How would you describe your organization's overall reputation risk management maturity?",
+        "options": [
+          {
+            "value": "0",
+            "label": "Formal process linked to board KPIs (WTW standard)"
+          },
+          {
+            "value": "2",
+            "label": "Reactive — we manage issues when they arise"
+          },
+          {
+            "value": "4",
+            "label": "No formal reputation risk management process"
+          }
+        ]
+      },
+      {
+        "key": "q20",
+        "title": "Overall, how confident are you in your brand's current digital reputation health?",
+        "options": [
+          {
+            "value": "0",
+            "label": "High — I know what's out there and it's positive"
+          },
+          {
+            "value": "2",
+            "label": "Moderate — some gaps I'm aware of"
+          },
+          {
+            "value": "4",
+            "label": "Low — I'm not sure what people find when they search us"
+          }
+        ]
+      }
+    ]
+  }
+]

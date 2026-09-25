@@ -19,7 +19,7 @@ for (const [slug, page] of Object.entries(pages)) {
   const css = html + (fs.existsSync(cssPath) ? fs.readFileSync(cssPath, 'utf8') : '');
   for (const s of page.sections) {
     let r = $('#' + s.referenceId);
-    if (!r.length) {
+    if (!r.length && !s.synthetic) {
       const label = s.callout?.title || s.title || s.items?.[0] || s.cards?.[0]?.title;
       if (label) {
         const atom = $('.tn-atom, [field="title"], [field="btitle"]').toArray().find(e => normalize($(e).text()) === normalize(label));
@@ -33,6 +33,7 @@ for (const [slug, page] of Object.entries(pages)) {
     // Source artboard heights are editor coordinates, not intrinsic content heights.
     delete s.asideHeight;
     if (s.aside?.length) {
+      if (!s.title && !s.eyebrow) s.layout = 'split-prose';
       const title = texts.find(e => normalize($(e).text()) === normalize(s.title || ''));
       const body = texts.find(e => normalize($(e).text()) === normalize(load(s.body?.[0] || '').text()));
       const titleWidth = Number($(title).parent().attr('data-field-width-value'));
@@ -60,12 +61,15 @@ for (const [slug, page] of Object.entries(pages)) {
           c.titleSize = 20; c.titleWeight = 600; c.titleLineHeight = 1.35;
         }
         if (s.layout === 'numbers') {
-          const lead = t.find('strong').toArray().filter(e => /font-size:\s*24px/.test($(e).attr('style') || ''));
+          const lead = t.find('strong,span').toArray().filter(e => /font-size:\s*(24|28|30|32|36|40|44)px/.test($(e).attr('style') || '') && normalize($(e).text()).length < 80);
           if (lead.length) {
             c.title = lead.map(e => normalize($(e).text())).join(' ');
             lead.forEach(e => $(e).remove());
             c.parts = [normalize(t.text()), (col.find('.t-card__descr').html() || '').replace(/^(?:\s|<br\s*\/?>)+/g,'').trim()];
-            c.titleSize = 24; c.titleWeight = 700; c.titleLineHeight = 1.3;
+            c.titleSize = Number($(lead[0]).attr('style')?.match(/font-size:\s*(\d+)px/)?.[1]) || 24; c.titleWeight = 700; c.titleLineHeight = 1.3;
+            c.titleColor = $(lead[0]).attr('style')?.match(/color:\s*([^;]+)/)?.[1];
+            c.descriptionWeight = c.titleSize === 32 ? 600 : 400;
+            s.layout = 'numbers';
           }
         } else if (s.kind !== 'related') {
           t.find('br').replaceWith('\n');

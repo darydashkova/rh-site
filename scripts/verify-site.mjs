@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {load} from 'cheerio';
-const base='http://127.0.0.1:3001';
+const base=process.argv[2]||'http://127.0.0.1:3001';
 const routes=['/','/solutions','/reputation-management-pricing','/faq','/contacts','/risk-control-center','/company','/case-studies','/rh-detection','/rh-control','/rh-defence','/rh-personal','/team'];
 const assets=new Set();
 for(const route of routes) {

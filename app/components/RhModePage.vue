@@ -23,6 +23,12 @@ function selectLayer(value: "technology" | "services", focus = false) {
 }
 const activeHeroSlide = ref(0);
 const activeRiskSlide = ref(0);
+const videoIds = {
+  detection: "a84jhck4oYBtupCJkuRBks",
+  control: "dGpbtffuwmHoxS84jsRc96",
+  defence: "8C2h4EnqVxDdTDRx9uoUkM",
+  personal: "oHZMmejFWr1Vu4xCuuPGb1",
+};
 const riskSlides = [
   "/images/risk-check-slide-1.webp",
   "/images/risk-check-slide-2.webp",
@@ -103,11 +109,14 @@ const otherModes = computed(() =>
     <section class="rh-mode-video">
       <div class="rh-mode-container">
         <h2>{{ mode.videoTitle }}</h2>
-        <div
+        <iframe
           class="rh-mode-video__frame"
-          role="img"
-          :aria-label="`${mode.videoTitle} video preview`"
-        ></div>
+          :src="`https://kinescope.io/embed/${videoIds[mode.key]}`"
+          :title="mode.videoTitle"
+          loading="lazy"
+          allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+          allowfullscreen
+        ></iframe>
       </div>
     </section>
 
@@ -148,7 +157,8 @@ const otherModes = computed(() =>
       <div class="rh-mode-container">
         <div class="rh-mode-rule">
           <p>{{ mode.rolesEyebrow }}</p>
-          <h2>{{ mode.rolesTitle }}</h2>
+          <h2 v-if="mode.key === 'defence'"><span class="rh-mode-accent">RH Defence</span> is right for you, if you are:</h2>
+          <h2 v-else>{{ mode.rolesTitle }}</h2>
           <p v-if="mode.key === 'control'" class="rh-mode-section-intro">
             {{ mode.rolesDescription }}
           </p>
@@ -464,7 +474,8 @@ const otherModes = computed(() =>
       <div class="rh-mode-container">
         <div class="rh-mode-risk-check__copy">
           <p class="rh-mode-eyebrow">{{ details.risk.eyebrow }}</p>
-          <h2>{{ details.risk.title }}</h2>
+          <h2 v-if="mode.key === 'defence'">See your brand's<br>Reputation Risk for free</h2>
+          <h2 v-else>{{ details.risk.title }}</h2>
           <p>{{ details.risk.text }}</p>
           <ActionButton href="https://checkmyrisks.com/" variant="light"
             >Try Risk Check For Free</ActionButton

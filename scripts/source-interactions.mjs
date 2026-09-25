@@ -1,0 +1,2 @@
+import fs from 'node:fs';import{load}from'cheerio';
+for(const slug of process.argv.slice(2)){const $=load(fs.readFileSync(`scripts/reference/${slug}.html`,'utf8'));console.log(slug);$('#allrecords>.r').each((_,e)=>{const r=$(e);console.log(r.attr('id'),r.attr('class'),r.find('a[href^="#"]').toArray().map(a=>[$(a).text().trim(),$(a).attr('href'),$(a).closest('.tn-elem').attr('class')]));});console.log($('script').toArray().map(e=>$(e).text()).filter(t=>t.includes('2832719901')||t.includes('2939891901')).join('\n').slice(0,14000));}

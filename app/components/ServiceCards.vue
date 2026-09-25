@@ -20,11 +20,13 @@ withDefaults(
       v-for="(card, index) in cards"
       :key="index"
       class="service-card"
+      :class="{ 'service-card--split-statistic': card.descriptionWeight }"
       :style="{
         backgroundColor: card.background,
         backgroundImage: card.backgroundImage ? `url('${card.backgroundImage}')` : undefined,
         color: card.color,
         border: card.borderColor ? `1px solid ${card.borderColor}` : undefined,
+        '--card-description-weight': card.descriptionWeight,
       }"
     >
       <img
@@ -46,12 +48,13 @@ withDefaults(
         fontSize: card.titleSize ? `${card.titleSize}px` : undefined,
         fontWeight: card.titleWeight,
         lineHeight: card.titleLineHeight,
+        color: card.titleColor,
       }">{{ card.title }}</h3>
-      <ServiceRichText v-if="card.subtitle" :html="card.subtitle" />
-      <ServiceRichText
+      <ServiceFormattedText v-if="card.subtitle" :text="card.subtitle" />
+      <ServiceFormattedText
         v-for="(part, partIndex) in card.parts"
         :key="partIndex"
-        :html="part"
+        :text="part"
         :class="{
           'service-card__quote':
             kind === 'roles' &&
@@ -66,22 +69,22 @@ withDefaults(
       />
       <template v-if="card.before">
         <div class="service-card__before">
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in card.before"
             :key="part"
-            :html="part"
+            :text="part"
           />
         </div>
         <div class="service-card__after">
-          <ServiceRichText
+          <ServiceFormattedText
             v-for="part in card.after"
             :key="part"
-            :html="part"
+            :text="part"
           />
         </div>
-        <ServiceRichText
+        <ServiceFormattedText
           v-if="card.source"
-          :html="card.source"
+          :text="card.source"
           class="service-card__source"
         />
       </template>

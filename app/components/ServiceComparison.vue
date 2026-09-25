@@ -21,7 +21,7 @@ defineProps<{ headings: string[]; rows: string[][] }>();
             v-for="(cell, i) in row"
             :key="i"
             :scope="i === 0 ? 'row' : undefined"
-            ><ServiceRichText :html="cell"
+            ><ServiceFormattedText :text="cell"
           /></component>
         </tr>
       </tbody>

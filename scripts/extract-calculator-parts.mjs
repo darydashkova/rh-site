@@ -1,0 +1,2 @@
+import fs from 'node:fs';import {load} from 'cheerio';
+for(const file of fs.readdirSync('scripts/reference/calculators').filter(f=>f.endsWith('.html'))){const slug=file.slice(0,-5),$=load(fs.readFileSync('scripts/reference/calculators/'+file,'utf8'));const block=$('.t123').eq(4);fs.writeFileSync(`scripts/reference/calculators/${slug}.js`,block.find('script').text());block.find('script,style').remove();fs.writeFileSync(`scripts/reference/calculators/${slug}.markup.txt`,block.html());}

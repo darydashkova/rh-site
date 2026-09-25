@@ -1,0 +1,2 @@
+import fs from 'node:fs';import{load}from'cheerio';
+for(const file of fs.readdirSync('scripts/reference/calculators').filter(f=>f.endsWith('.html'))){const $=load(fs.readFileSync('scripts/reference/calculators/'+file,'utf8'));let css='';for(const e of $('.t123 link[rel=stylesheet]').toArray()){const url=$(e).attr('href');if(url.includes('_tilda_css')){const r=await fetch(new URL(url,'https://reputation.house'));if(!r.ok)throw Error(url);css+=await r.text();}}fs.writeFileSync('scripts/reference/calculators/'+file.replace('.html','.css'),css);console.log(file,css.length);}

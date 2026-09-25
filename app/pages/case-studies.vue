@@ -2,7 +2,10 @@
 import { antiCases, cases, categories } from "~/data/caseCatalog";
 import "./case-studies.css";
 
-const activeTab = ref<"cases" | "anti">("cases");
+const route = useRoute();
+const activeTab = ref<"cases" | "anti">(
+  route.query.tab === "anti" ? "anti" : "cases",
+);
 const category = ref("All");
 const visibleCount = ref(6);
 const items = computed(() => (activeTab.value === "cases" ? cases : antiCases));
@@ -20,6 +23,10 @@ function selectTab(tab: "cases" | "anti") {
   category.value = "All";
   visibleCount.value = 6;
 }
+watch(
+  () => route.query.tab,
+  (value) => selectTab(value === "anti" ? "anti" : "cases"),
+);
 function selectCategory(value: string) {
   category.value = value;
   visibleCount.value = 6;
@@ -51,7 +58,11 @@ useSeoMeta({
       </div>
     </section>
 
-    <section class="case-directory">
+    <section
+      id="case-directory"
+      class="case-directory"
+      style="scroll-margin-top: 90px"
+    >
       <div class="container">
         <nav class="cases-breadcrumb" aria-label="Breadcrumb">
           <SiteLink href="/">Main page</SiteLink><span>/</span

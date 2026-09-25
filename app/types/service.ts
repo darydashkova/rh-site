@@ -3,6 +3,8 @@ export interface ServiceAction {
   href: string;
 }
 export interface ServiceCard {
+  titleColor?: string;
+  descriptionWeight?: number;
   backgroundImage?: string;
   titleSize?: number;
   titleWeight?: number;
@@ -23,6 +25,13 @@ export interface ServiceCard {
   source?: string;
 }
 export interface ServiceSection {
+  descriptionEmphasis?: boolean;
+  synthetic?: boolean;
+  coverCopyWidth?: number;
+  coverImage?: string;
+  headingSize?: number;
+  headingWeight?: number;
+  images?: { src: string; alt: string; width?: number; height?: number }[];
   patternImage?: string;
   formButtonLabel?: string;
   formButtonWidth?: number;
@@ -62,6 +71,7 @@ export interface ServiceSection {
   questions?: { title: string; answer: string }[];
 }
 export interface ServicePageData {
+  personalService?: boolean;
   theme?: string;
   newService?: boolean;
   variant?: string;
@@ -69,6 +79,7 @@ export interface ServicePageData {
   metaTitle: string;
   description: string;
   hero: {
+    split?: boolean;
     titleWidth?: number;
     bodyWidth?: number;
     compact?: boolean;

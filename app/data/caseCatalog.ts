@@ -80,7 +80,7 @@ export const cases: CaseItem[] = [
       "Updating 60 Platforms in 6 Months So Search Reflects an Executive's Actual Exit",
     description:
       "Synchronising a digital footprint with reality across Bing and Google local.",
-    image: "/images/case-exit.png",
+    image: "/images/case-exit.svg",
     href: "https://reputation.house/case-study-executive-exit-search",
   },
   {

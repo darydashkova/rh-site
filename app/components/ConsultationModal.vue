@@ -2,6 +2,7 @@
 const emit = defineEmits<{ close: [] }>();
 const dialog = ref<HTMLDialogElement>();
 const sent = ref(false);
+const country = ref("+49");
 const previousFocus = ref<HTMLElement | null>(null);
 onMounted(() => {
   previousFocus.value = document.activeElement as HTMLElement;
@@ -12,10 +13,8 @@ onBeforeUnmount(() => {
   document.body.style.overflow = "";
   previousFocus.value?.focus();
 });
-function submit() {
-  sent.value = true;
-}
 </script>
+
 <template>
   <dialog
     ref="dialog"
@@ -27,75 +26,99 @@ function submit() {
     <div class="modal-content">
       <button
         class="modal-close"
+        type="button"
         aria-label="Close consultation"
         @click="emit('close')"
       >
         ×
       </button>
-      <template v-if="!sent">
-        <p class="modal-eyebrow">REPUTATION HOUSE</p>
-        <h2 id="consultation-title">
-          Get your tailored<br />reputation strategy
-        </h2>
-        <p>Tell us about your situation. Our experts are here to help.</p>
-        <form @submit.prevent="submit">
-          <label
-            >Your name<input
+      <svg
+        class="modal-pattern"
+        viewBox="0 0 760 220"
+        fill="none"
+        aria-hidden="true"
+      >
+        <g stroke="#bfd8b3" stroke-width="27" stroke-linecap="round">
+          <path d="M216 16 203 95" opacity=".35" />
+          <path d="M313 70 318 155" opacity=".7" />
+          <path d="M423 105 449 187" />
+          <path d="M535 113 585 185" />
+          <path d="M648 90 714 147" />
+          <path d="M733 40 790 72" />
+          <path d="M473 -31 480 20" />
+          <path d="M552 -33 569 14" />
+        </g>
+      </svg>
+      <div class="modal-body">
+        <template v-if="!sent">
+          <h2 id="consultation-title">Free Reputation Audit</h2>
+          <p class="modal-description">
+            Get a confidential consultation and preliminary audit
+          </p>
+          <form @submit.prevent="sent = true">
+            <label for="audit-name">Full Name*</label>
+            <input
+              id="audit-name"
               name="name"
               autocomplete="name"
-              placeholder="Your name"
+              placeholder="John Smith"
               required
-          /></label>
-          <label
-            >Email<input
+            />
+            <label for="audit-email">Email*</label>
+            <input
+              id="audit-email"
               name="email"
               type="email"
               autocomplete="email"
-              placeholder="you@company.com"
-              required
-          /></label>
-          <label
-            >Phone number<input
-              name="phone"
-              type="tel"
-              autocomplete="tel"
-              placeholder="+1 (999) 999-9999"
-          /></label>
-          <label
-            >How can we help?<textarea
-              name="message"
-              rows="3"
-              placeholder="Describe your situation"
+              placeholder="johnsmith@mail.com"
               required
             />
-          </label>
-          <label class="consent"
-            ><input type="checkbox" required />
-            <span
-              >I agree to the
-              <SiteLink
-                href="https://reputation.house/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Privacy Policy</SiteLink
-              >.</span
-            ></label
-          >
-          <button class="modal-submit" type="submit">
-            Get a tailored strategy
+            <label for="audit-phone">Phone*</label>
+            <div class="phone-field">
+              <select v-model="country" aria-label="Phone country code">
+                <option value="+49">🇩🇪 +49</option>
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+971">🇦🇪 +971</option>
+                <option value="+852">🇭🇰 +852</option>
+                <option value="+966">🇸🇦 +966</option>
+                <option value="+7">+7</option>
+                <option value="">Other</option>
+              </select>
+              <input
+                id="audit-phone"
+                name="phone"
+                type="tel"
+                autocomplete="tel-national"
+                placeholder="(000) 000-00000"
+                required
+              />
+            </div>
+            <label for="audit-site">Site</label>
+            <input id="audit-site" name="site" autocomplete="url" />
+            <label for="audit-comment"
+              >Brief description of your situation</label
+            >
+            <textarea id="audit-comment" name="message" rows="5" />
+            <div class="verification-slot"><slot name="verification" /></div>
+            <button class="modal-submit" type="submit">
+              Get Free Confidential Assessment
+            </button>
+            <p class="confidential-note">
+              Your information is confidential and will never be shared
+            </p>
+          </form>
+        </template>
+        <div v-else class="demo-success" role="status">
+          <h2 id="consultation-title">Your form is ready.</h2>
+          <p>
+            This is a demonstration. Your information has not been sent or
+            stored.
+          </p>
+          <button class="modal-submit" @click="emit('close')">
+            Back to the website
           </button>
-          <p class="demo-note">Preview form — no information will be sent.</p>
-        </form>
-      </template>
-      <div v-else class="demo-success" role="status">
-        <span class="success-icon">✓</span>
-        <h2 id="consultation-title">Your form is ready.</h2>
-        <p>
-          This is a demonstration. Your information has not been sent or stored.
-        </p>
-        <button class="modal-submit" @click="emit('close')">
-          Back to the website
-        </button>
+        </div>
       </div>
     </div>
   </dialog>
@@ -105,124 +128,180 @@ function submit() {
 .consultation-modal {
   padding: 0;
   border: 0;
-  width: min(560px, calc(100% - 32px));
-  max-height: 90dvh;
+  width: min(760px, calc(100% - 32px));
+  max-width: none;
+  max-height: calc(100dvh - 48px);
+  margin: auto;
   background: #fff;
   color: #262626;
-  border-radius: 16px;
-  box-shadow: 0 24px 100px #0005;
+  border-radius: 20px;
 }
 .consultation-modal::backdrop {
   background: #0009;
-  backdrop-filter: blur(4px);
 }
 .modal-content {
-  padding: 45px;
   position: relative;
+  overflow: hidden;
+}
+.modal-pattern {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .modal-close {
   position: absolute;
   right: 16px;
-  top: 10px;
-  font-size: 32px;
-  background: none;
+  top: 12px;
+  z-index: 1;
+  width: 36px;
+  height: 36px;
   border: 0;
-  color: #5e6858;
+  background: #ffffffd9;
+  border-radius: 50%;
+  color: #5d6c57;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
 }
-.modal-eyebrow {
-  font-size: 12px;
-  letter-spacing: 1px;
-  color: #5e6858;
-  margin-bottom: 20px;
+.modal-body {
+  padding: 28px 45px 40px;
 }
-.modal-content h2 {
+.modal-body h2 {
+  margin: 0 0 12px;
   font-size: 32px;
-  line-height: 1.2;
-  font-weight: 400;
-  margin: 0 0 16px;
+  line-height: 1.25;
+  font-weight: 600;
+  text-align: center;
 }
-.modal-content p {
-  font-size: 14px;
-  line-height: 1.6;
+.modal-description {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #494949;
 }
-.modal-content form {
-  margin-top: 24px;
+form {
+  margin-top: 28px;
 }
-.modal-content label:not(.consent) {
+label {
   display: block;
-  font-size: 12px;
+  margin: 26px 0 8px;
+  font-size: 18px;
+  line-height: 1.4;
   font-weight: 500;
-  margin-top: 14px;
 }
-.modal-content input:not([type="checkbox"]),
-.modal-content textarea {
+label:first-child {
+  margin-top: 0;
+}
+input,
+textarea,
+.phone-field {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid #d5d7d2;
-  border-radius: 6px;
-  background: #fafbf9;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  background: #fff;
   color: #262626;
-  margin-top: 7px;
-  padding: 12px 14px;
-  font-size: 15px;
+  font: inherit;
+  font-size: 16px;
 }
-.modal-content textarea {
+input {
+  height: 60px;
+  padding: 0 20px;
+}
+input::placeholder {
+  color: #aaa;
+}
+textarea {
+  padding: 18px 20px;
+  min-height: 170px;
   resize: vertical;
 }
-.modal-content .consent {
+.phone-field {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 18px 0;
-  font-size: 12px;
-  line-height: 1.5;
 }
-.consent input {
-  accent-color: #5e6858;
+.phone-field select {
+  max-width: 130px;
+  padding: 0 8px 0 16px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: inherit;
 }
-.consent a {
-  color: #5e6858;
+.phone-field input {
+  border: 0;
+  background: transparent;
+  min-width: 0;
+  padding-left: 6px;
+}
+.verification-slot {
+  display: flex;
+  justify-content: center;
+  margin: 28px 0 24px;
+}
+.verification-slot:empty {
+  margin: 28px 0 0;
 }
 .modal-submit {
   width: 100%;
-  padding: 15px;
-  background: #5e6858;
+  min-height: 60px;
+  padding: 14px 20px;
   border: 0;
-  border-radius: 30px;
+  border-radius: 999px;
+  background: #5d6c57;
   color: #fff;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
 }
-.demo-note {
+.modal-submit:hover {
+  background: #bfd8b3;
+  color: #5d6c57;
+}
+.confidential-note {
+  margin: 20px 0 0;
   color: #777;
-  text-align: center;
-  font-size: 11px !important;
-}
-.demo-success {
-  padding: 30px 0;
+  font-size: 14px;
+  line-height: 1.5;
   text-align: center;
 }
-.success-icon {
-  display: inline-grid;
-  place-items: center;
-  background: #e0ecd8;
-  color: #5e6858;
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  font-size: 32px;
-  margin-bottom: 20px;
+.demo-success p {
+  text-align: center;
+  margin: 20px 0;
 }
-.demo-success button {
-  margin-top: 20px;
-}
-
-@media (max-width: 640px) {
-  .modal-content {
-    padding: 32px 24px;
+@media (max-width: 600px) {
+  .consultation-modal {
+    max-height: calc(100dvh - 24px);
+    border-radius: 16px;
   }
-  .modal-content h2 {
-    font-size: 28px;
+  .modal-body {
+    padding: 20px 24px 28px;
+  }
+  .modal-body h2 {
+    font-size: 24px;
+  }
+  .modal-description {
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  input {
+    height: 48px;
+    padding-inline: 14px;
+  }
+  textarea {
+    min-height: 140px;
+  }
+  .modal-submit {
+    min-height: 48px;
+    font-size: 14px;
+  }
+  .confidential-note {
+    font-size: 11px;
   }
 }
 </style>

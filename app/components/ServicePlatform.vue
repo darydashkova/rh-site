@@ -26,7 +26,7 @@ function move(direction: number) {
       />
       <div aria-live="polite">
         <h3>{{ slide.title }}</h3>
-        <ServiceRichText v-for="part in slide.parts" :key="part" :html="part" />
+        <ServiceFormattedText v-for="part in slide.parts" :key="part" :text="part" />
       </div>
       <div class="service-platform__bottom">
         <p>
