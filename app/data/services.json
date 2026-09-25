@@ -1,0 +1,50 @@
+[
+  {
+    "title": "RH Control · Influence",
+    "description": "\"Negative content ranks first for our brand name in Google.\"",
+    "action": {
+      "label": "SEARCH ENGINE REPUTATION",
+      "href": "https://reputation.house/serm-services"
+    }
+  },
+  {
+    "title": "RH Control · Influence",
+    "description": "\"ChatGPT is telling our clients something wrong about us.\"",
+    "action": {
+      "label": "AI REPUTATION",
+      "href": "https://reputation.house/ai-influence-services"
+    }
+  },
+  {
+    "title": "RH Defence",
+    "description": "\"We're being attacked right now. There is no plan.\"",
+    "action": {
+      "label": "CRISIS MANAGEMENT",
+      "href": "https://reputation.house/crisis-management-agency"
+    }
+  },
+  {
+    "title": "RH Detection",
+    "description": "\"We're closing a deal. The counterparty will check us before we talk.\"",
+    "action": {
+      "label": "BRAND AUDIT",
+      "href": "https://reputation.house/brand-audit"
+    }
+  },
+  {
+    "title": "RH Detection",
+    "description": "\"We find out about problems last: from clients or from the press.\"",
+    "action": {
+      "label": "REPUTATION MONITORING",
+      "href": "https://reputation.house/online-reputation-monitoring"
+    }
+  },
+  {
+    "title": "RH Control · Build",
+    "description": "\"Candidates read our Glassdoor reviews and disappear.\"",
+    "action": {
+      "label": "EMPLOYER BRANDING",
+      "href": "https://reputation.house/employer-reputation-management"
+    }
+  }
+]

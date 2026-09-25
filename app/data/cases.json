@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Fintech",
+    "region": "Brand · UK / Cyprus / Malta",
+    "before": "Negative coverage tied the brand to a named individual across Google UK, Cyprus and Malta Top-20 — including FinTelegram reporting. Sales and partnership conversations kept surfacing the wrong story before they began.",
+    "result": "12 → 5",
+    "after": "Google UK Top-20 positive share up 48% (+50% growth), negative down to 8% (−38%). Unique negative pages in UK: 12 → 5. 5 more articles removed, 1 deindexed, 1 pushed out of Top-20.",
+    "tags": [
+      "SERM",
+      "Brand Reputation",
+      "Narrative Management",
+      "Online Review Management"
+    ],
+    "href": ""
+  },
+  {
+    "title": "Business Consulting",
+    "region": "Executive · UK / UAE",
+    "before": "Search results linked the executive to former business associations across the UK and UAE. Every due diligence surfaced the old narrative, with no new, positive entry point.",
+    "result": "3% → 70%",
+    "after": "Google UK Top-10 positive share: 3% → 70%. Negative share: 11% → 6%. A parallel positive halo effect appeared in Google UAE (3% → 65%) without any direct placements there.",
+    "tags": ["Personal Reputation Repair", "SERM", "Reputation Building"],
+    "href": "https://reputation.house/case-study-narrative-redirection"
+  },
+  {
+    "title": "Real Estate",
+    "region": "Executive · UAE / Multi-region",
+    "before": "Media outlets and Telegram channels linked the executive to corruption allegations and unlawful land-deal schemes — visible across Eastern Europe, UAE, Armenia and Georgia.",
+    "result": "−45%",
+    "after": "Negative visibility down across all 4 regions: −45% Bing (Eastern Europe), −26% Google (Eastern Europe), −18% UAE, −19% Armenia, −16% Georgia. All 6 negative autocomplete suggestions removed.",
+    "tags": ["Personal Reputation Repair", "SERM", "Monitoring"],
+    "href": "https://reputation.house/case-study-serm-multiregion"
+  }
+]

@@ -1,0 +1,426 @@
+{
+  "title": "How Much Do Reputation Management Services Cost in 2026: Reputation House Pricing",
+  "description": "Reputation House prices around agreed KPIs, not a fixed menu — most engagements run $5,000 to $100,000+ a month as a retainer, and the exact number follows from what you commit to detect, manage or contain, and on what timeline. Below: how payment works, how a price actually gets set, and the full menu by solution. In practice, reputation management costs here track the size of the risk, not a seat count — which is why online reputation management pricing looks nothing like a software subscription. That's also why online reputation management costs and online reputation management prices vary so widely between providers — the number reflects the risk being managed, not a shelf price..",
+  "eyebrow": "Digital Risk Protection — Pricing Guide",
+  "summary": [
+    {
+      "name": "Risk Check",
+      "price": "Free",
+      "unit": "",
+      "description": "5-element diagnostic. No card, no commitment.",
+      "id": "risk-check"
+    },
+    {
+      "name": "RH Detection",
+      "price": "$5K–25K",
+      "unit": "/month",
+      "description": "Early-warning monitoring across your information field.",
+      "id": "detection"
+    },
+    {
+      "name": "RH Control",
+      "price": "$10K–50K",
+      "unit": "/month/region",
+      "description": "Full management of search, reviews, narrative and AI.",
+      "id": "control"
+    },
+    {
+      "name": "RH Defence",
+      "price": "$50K–100K",
+      "unit": "/month",
+      "description": "Active-phase crisis containment. Priority team, 24/7.",
+      "id": "defence"
+    },
+    {
+      "name": "RH Personal",
+      "price": "$5K–15K",
+      "unit": "/month",
+      "description": "Confidential profile management for an individual.",
+      "id": "personal"
+    }
+  ],
+  "paymentIntro": [
+    "How Payment Works",
+    "Three Ways You Can Pay for Reputation Management",
+    "Reputation management services pricing isn't a single price list — there are three payment models, and which one applies depends on whether the work is ongoing, finite, or urgent. Most reputation management fees fall into one of these three billing shapes, whatever provider you use, so it helps to know which one you're actually buying."
+  ],
+  "paymentModels": [
+    {
+      "label": "Most common",
+      "title": "Retainer",
+      "description": "Billed monthly, scoped to an agreed KPI cycle — reviewed and reset every quarter. The default model for ongoing coverage.",
+      "usage": "Used for: RH Detection, RH Control, RH Personal."
+    },
+    {
+      "label": "Finite scope",
+      "title": "Project",
+      "description": "A fixed deliverable, fixed fee, fixed timeline — no recurring billing. Used where there's a clear finish line.",
+      "usage": "Used for: Risk Check diagnostics, negative content removal, pre-deal and pre-IPO profile preparation."
+    },
+    {
+      "label": "Active crisis",
+      "title": "Project + Urgency Premium",
+      "description": "Priced as a project because the engagement is time-boxed by the crisis itself, with a premium for 24/7 priority response.",
+      "usage": "Used for: RH Defence, acute RH Personal Crisis response."
+    }
+  ],
+  "continuous": [
+    "Continuous Management",
+    "Most engagements land on a retainer because most reputational risk isn't a one-time problem — it's monitored, reported and adjusted every quarter. You're not buying a fixed task; you're buying a KPI commitment for a period, and scope and price follow from what it takes to hit it."
+  ],
+  "stepsIntro": [
+    "How The Price Is Set",
+    "From First Call to Fixed Reputation Management Pricing",
+    "The price isn't quoted cold — it's built with you, in four steps, before anything is signed."
+  ],
+  "steps": [
+    {
+      "number": "01",
+      "title": "Discovery call",
+      "description": "We talk through the situation and the request — what's at risk, who's checking, and on what timeline."
+    },
+    {
+      "number": "02",
+      "title": "Analytics",
+      "description": "We map the current information field: the same five-element view as Risk Check, done in full. Search, mentions, AI representation, reviews, narrative and tone."
+    },
+    {
+      "number": "03",
+      "title": "KPI & timeline proposal",
+      "description": "Based on the findings, we propose specific KPIs — coverage, SLA, share-of-voice targets — and the timeline to hit them."
+    },
+    {
+      "number": "04",
+      "title": "Scope & price locked",
+      "description": "Scope of work and price follow the agreed KPIs and timeline, confirmed in the proposal before work starts."
+    }
+  ],
+  "timelines": [
+    {
+      "label": "Faster",
+      "title": "6 months",
+      "description": "More work concentrated per month to hit the same KPIs sooner — higher monthly spend, shorter total commitment."
+    },
+    {
+      "label": "Standard",
+      "title": "12 months",
+      "description": "Same end state, paced over a longer runway — lower monthly spend, longer total commitment."
+    }
+  ],
+  "timelineNote": "The destination is usually the same either way — the question step 03 answers is how much gets spent per month to get there.",
+  "proposal": {
+    "title": "What's In Every Reputation Management Proposal",
+    "description": "Every commercial proposal includes the forecast we're committing to, not just a price — so you can see what the number is actually paying for before you sign. Unlike many reputation management companies, we show the forecast in the same document as the fee.",
+    "label": "No Black Box",
+    "metrics": [
+      {
+        "title": "Negative share",
+        "description": "Target reduction in negative-content share across the elements being tracked, from the baseline found in analytics."
+      },
+      {
+        "title": "Positive share",
+        "description": "Target growth in positive, on-message content and search visibility over the same period."
+      },
+      {
+        "title": "Crowd-marketing volume",
+        "description": "Where relevant — the volume of authentic community and review activity we commit to generating."
+      },
+      {
+        "title": "Loyalty index baseline",
+        "description": "A starting measure of audience sentiment, tracked alongside the other KPIs each quarter."
+      }
+    ]
+  },
+  "programs": [
+    {
+      "id": "detection",
+      "title": "RH Detection — Reputation Management Priced by Coverage and Speed",
+      "description": "RH Detection watches the whole information field and flags risk before it's public. It doesn't change what's already out there — that's Control — and it doesn't fight an active crisis — that's Defence. Think of it as proactive reputation management: catching a bad post on review sites or a slip in search engine rankings while it's still cheap to fix.",
+      "features": [
+        "Full 5-module monitoring: SERP, mentions/social, AI answers, reviews, sentiment",
+        "Risk triage and early-warning alerts",
+        "Quarterly information-field mapping report"
+      ],
+      "product": "Digital Risk Protection",
+      "productDescription": "Continuous monitoring across all five modules — search, mentions, AI answers, reviews, sentiment — with alerts, risk triage and quarterly field mapping.",
+      "kpi": "Coverage and speed — e.g. 100% of the information field monitored, with a defined SLA for flagging negative signals, often minutes to hours from publication, not days. Set from the analytics baseline, reviewed every quarter.",
+      "price": "$5K–$25K",
+      "unit": "/mo",
+      "billing": "Retainer",
+      "name": "RH Detection",
+      "related": [
+        {
+          "title": "Brand & Mention Monitoring",
+          "description": "Real-time tracking of mentions across media, social, blogs, video and forums.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "Brand Insight / Information Field Analysis",
+          "description": "Full map of the information field: what shapes opinion, and where the risk is hidden.",
+          "billing": "Scoped by engagement",
+          "price": "Project"
+        },
+        {
+          "title": "AI Monitoring",
+          "description": "Tracking how ChatGPT, Gemini and Perplexity describe the brand.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "Digital Risk Protection (module)",
+          "description": "Cross-module threat detection, with financial exposure sizing.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "RH Control — Reputation Management Priced by Share of Voice",
+      "description": "RH Control manages what's already public — search results, reviews, narrative, AI answers — on an ongoing basis, across one or more regions. This is reputation management in its most active form — shaping search results, review platforms and social media at once to build lasting brand visibility, not just patch a single bad listing.",
+      "features": [
+        "Full platform access: SERP, mentions, AI, reviews, sentiment",
+        "Ongoing narrative and content strategy",
+        "Dedicated account management and reporting"
+      ],
+      "product": "Brand Reputation Management · Manage Online Presence",
+      "productDescription": "Strategic, ongoing management of search results, narrative, content and AI presentation across the whole information field — full platform, one account team.",
+      "kpi": "Share of voice — an agreed target for positive vs. negative share of top search results, review-platform rating, or narrative share in AI answers. Set from the Risk Check baseline, tracked and adjusted every quarter.",
+      "price": "$10K–$50K",
+      "unit": "/mo/region",
+      "billing": "Retainer",
+      "name": "RH Control",
+      "related": [
+        {
+          "title": "Business Media Presence",
+          "description": "Risk-driven presence in business and industry media.",
+          "billing": "Retainer or project",
+          "price": "$5K–$30K/mo"
+        },
+        {
+          "title": "HR / Employer Reputation",
+          "description": "Build and protect the employer brand across reviews, search and social.",
+          "billing": "Retainer or project",
+          "price": "$5K–$30K/mo"
+        },
+        {
+          "title": "Reputation Building / Market Entry",
+          "description": "Build a positive information field from zero in a new market.",
+          "billing": "Retainer or project",
+          "price": "$5K–$30K/mo"
+        },
+        {
+          "title": "Online Review Management",
+          "description": "Control rating and review pressure — Trustpilot, Google, app stores.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "AI Influence Services",
+          "description": "Shape what AI assistants say about the brand.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "Brand Reputation & Narrative Management",
+          "description": "Manage the story customers, investors and media read about you.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "Search Engine Reputation Management (SERM)",
+          "description": "Reshape search results so high-stakes queries stop costing deals.",
+          "billing": "Retainer",
+          "price": "$10K–$50K/mo/region"
+        }
+      ]
+    },
+    {
+      "id": "defence",
+      "title": "RH Defence — Reputation Management Priced by Response Time",
+      "description": "RH Defence is the emergency mode — a priority team deployed when a crisis is already public, not a background service. This is reputation management under pressure — the same discipline as Detection and Control, compressed into hours instead of a quarterly cycle.",
+      "features": [
+        "Priority crisis team, deployed immediately",
+        "Real-time cross-module monitoring, 24/7",
+        "Suppression, counter-narrative, urgent search response"
+      ],
+      "product": "Reputation Crisis Management",
+      "productDescription": "Built for companies already in an active crisis: a regulatory investigation, a coordinated attack, a viral negative wave, or an incident that has reached the media. Deployment starts within hours, across search, social, media, and AI answers at once.",
+      "kpi": "Speed, not a quarterly cycle — response-time SLA for team activation, daily (not monthly) tracking of negative-content volume, and an agreed point at which the engagement steps back down to RH Detection or RH Control.",
+      "price": "From $50K",
+      "unit": "/mo/region",
+      "billing": "Project + urgency premium",
+      "name": "RH Defence",
+      "related": [
+        {
+          "title": "Community Safeguard / Brand Protection",
+          "description": "Protect UGC-heavy verticals from coordinated negativity before it becomes a crisis.",
+          "billing": "Retainer",
+          "price": "$5K–$25K/mo"
+        },
+        {
+          "title": "Reputation Repair / Negative Suppression",
+          "description": "Urgently push down damaging content and rebuild search results under pressure.",
+          "billing": "Project + urgency premium",
+          "price": "$50K–$100K+/mo"
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "title": "RH Personal — Reputation Management Priced by Access Risk",
+      "description": "RH Personal manages one person's digital profile, confidentially — a beneficiary, executive or public figure, not the company itself. It's personal reputation management, applied with the same rigor as brand work, because a leader's online reputation shapes deals, hiring and investor trust just as much as the company's does.",
+      "features": [
+        "All 5 elements of the personal profile monitored continuously",
+        "Protect, build or repair an outdated footprint under one retainer",
+        "NDA-bound, discreet delivery"
+      ],
+      "product": "Personal Reputation Management · Manage My Online Presence",
+      "productDescription": "Turnkey management of a beneficiary's digital profile across monitoring, presence, repair and crisis — profile integrity, not personal PR.",
+      "kpi": "Access risk, not visibility for its own sake — confirming that due-diligence-relevant search results and AI answers about the individual are accurate and current, reviewed on the same quarterly cycle as brand engagements.",
+      "price": "$5K–$15K",
+      "unit": "/mo",
+      "billing": "Retainer",
+      "name": "RH Personal",
+      "related": [
+        {
+          "title": "Personal Digital Profile Management (Executive Monitoring)",
+          "description": "Personal monitoring and protection for top managers, owners and public figures.",
+          "billing": "Retainer",
+          "price": "$5K–$15K/mo"
+        },
+        {
+          "title": "Personal Monitoring",
+          "description": "Quiet, ongoing monitoring of a profile as banks and partners see it.",
+          "billing": "Retainer",
+          "price": "$5K–$15K/mo"
+        },
+        {
+          "title": "Personal Reputation Building",
+          "description": "Build a beneficiary's presence from zero into a coherent, credible profile.",
+          "billing": "Retainer",
+          "price": "$5K–$15K/mo"
+        },
+        {
+          "title": "Business Media Presence (Persona)",
+          "description": "Discreet presence in business media as part of a coherent profile.",
+          "billing": "Retainer",
+          "price": "$5K–$15K/mo"
+        },
+        {
+          "title": "Public-Figure Profile Integrity",
+          "description": "Coherent, defensible public profile, without vanity PR.",
+          "billing": "Retainer",
+          "price": "$5K–$15K/mo"
+        },
+        {
+          "title": "Personal Reputation Repair",
+          "description": "Clear chronic negativity and realign an outdated footprint, without publicity.",
+          "billing": "Retainer or project",
+          "price": "$5K–$30K/mo"
+        },
+        {
+          "title": "Personal Crisis Response",
+          "description": "Acute containment for a scandal around one person's name.",
+          "billing": "Project + urgency premium",
+          "price": "From $25K"
+        }
+      ]
+    }
+  ],
+  "marketIntro": [
+    "What We Track",
+    "Reputation Management Costs: The Price of Finding Out Late",
+    "Two patterns from 2026 that inform how this is priced — not case studies of our work, but the market data the pricing logic above is built on."
+  ],
+  "marketCases": [
+    {
+      "title": "Wix, Intuit and Medpace",
+      "label": "Narrative gap",
+      "description": "Thirteen securities-fraud investigations opened in thirteen consecutive weeks in 2026, all following the same mechanism: a public narrative diverges from operating reality, and the market reprices the stock in a single session once it finds out. Wix (−27%), Intuit (−20%) and Medpace (−15.9%) are among the recent examples.",
+      "source": "Morningstar, Barchart, 2026"
+    },
+    {
+      "title": "KPMG Australia",
+      "label": "Governance",
+      "description": "At KPMG Australia, a mishandled whistleblower complaint cost the CEO and the head of audit their jobs on the same day. Within two weeks the regulator had opened an investigation into three partners, and government contracts were at risk — the exposure widened in scope, not just severity, the longer it went unmanaged.",
+      "source": "Reuters, May–June 2026"
+    }
+  ],
+  "marketConclusion": [
+    "Reputation risk is rarely priced by what it is today — it's priced by how fast it escalates once it's public.",
+    "That's the return on investment case for reputation management in plain terms: independent research puts intangible assets like brand and reputation at roughly 90% of S&P 500 market value, and separate studies tie a meaningful share of a company's valuation directly to its reputation."
+  ],
+  "resultsIntro": [
+    "NDA from the very first contact",
+    "We don't disclose that a client works with us — in proposals, case studies, or press. Protecting your reputation includes protecting the fact that you sought protection at all.",
+    "Client Results",
+    "What the Retainer Actually Buys",
+    "We don't publish client names — the NDA starts at first contact. Two engagements clients agreed to share, in outline."
+  ],
+  "cases": [
+    {
+      "title": "Fintech",
+      "region": "Brand · UK / Cyprus / Malta",
+      "before": "Negative coverage tied the brand to a named individual across Google UK, Cyprus and Malta Top-20 — including FinTelegram reporting.",
+      "result": "12 → 5",
+      "after": "Unique negative pages in UK Top-20 cut from 12 to 5. Positive share up 48% (+50% growth).",
+      "tags": ["SERM", "Brand Reputation", "Narrative Management"]
+    },
+    {
+      "title": "Business Consulting",
+      "region": "Executive · UK / UAE",
+      "before": "Search results linked the executive to former business associations across the UK and UAE — every due diligence surfaced the old narrative.",
+      "result": "3% → 70%",
+      "after": "Google UK Top-10 positive share, with a parallel halo effect in Google UAE (3% → 65%).",
+      "tags": ["Personal Reputation Repair", "SERM", "Reputation Building"]
+    }
+  ],
+  "faq": [
+    {
+      "title": "How much does digital reputation protection cost?",
+      "answer": "RH Detection starts at $5,000/month, RH Control from $10,000/month per region, RH Defence from $50,000/month in an active crisis, and RH Personal from $5,000/month. Inside each, the exact price depends on the KPIs and timeline you agree to — see the full menu by solution above."
+    },
+    {
+      "title": "Why does the price depend on KPIs, not just a package?",
+      "answer": "Because scope of work is set to hit an agreed target, not a generic task list. Once we agree what \"done\" looks like — coverage, SLA, share of voice — the work and the price that gets you there follow directly, not the other way around."
+    },
+    {
+      "title": "Why is this a monthly retainer instead of a one-time project?",
+      "answer": "Because the risk is continuous. New content, reviews and AI answers appear every week — a one-time fix doesn't stop the field from producing risk again. RH Defence and acute RH Personal crisis work are priced as projects instead, since they're time-boxed by nature."
+    },
+    {
+      "title": "Can we finish faster, for more per month?",
+      "answer": "Yes — the same KPI can usually be hit in 6 months or 12. Compressing the timeline concentrates more work into each month, which raises the monthly rate; spreading it out lowers the monthly rate and extends the commitment. The end state is generally the same either way."
+    },
+    {
+      "title": "Can we start with a smaller budget?",
+      "answer": "Yes — start with Risk Check, a free, affordable reputation management diagnostic across search, AI, reviews and media. It shows exactly where the exposure is, so the first paid engagement is scoped to what needs protecting, not a guess."
+    },
+    {
+      "title": "We're in a crisis right now. What happens?",
+      "answer": "RH Defence starts immediately, not after a standard sales cycle. It's priced as a project with an urgency premium rather than a retainer, because the engagement is time-boxed to containing the active phase."
+    },
+    {
+      "title": "Do you guarantee results or removal?",
+      "answer": "No. Search algorithms, AI models and GDPR rules limit what any provider can guarantee. We don't promise removal or a fixed ranking outcome — we commit to continuous, expert-led management of the risk, which is a different promise."
+    },
+    {
+      "title": "Is reputation management worth the cost?",
+      "answer": "Usually, yes, for the buyers this is built for. Research on CEO reputation has tied a significant share of a company's market value to how its leadership is perceived, and separate research on Yelp ratings found that a one-star swing in a business's rating measurably moves revenue. Reputation management isn't priced against zero — it's priced against what a damaged search result, review pattern or AI answer would have cost you in a lost deal, a stalled raise or a hire who walked away."
+    },
+    {
+      "title": "How much does reputation management cost?",
+      "answer": "It depends on the risk, not a fixed menu — plans start at $5,000/month for RH Detection and RH Personal, $10,000/month per region for RH Control, and from $50,000/month for RH Defence in an active crisis. The exact number follows from the KPIs and timeline you agree to, not a seat count or a package tier."
+    },
+    {
+      "title": "How much is online reputation management?",
+      "answer": "Online reputation management is usually sold as a monthly retainer rather than a flat fee, because the risk it manages is ongoing, not one-time. Retainers here run from $5,000 to $100,000+ a month depending on scope, region and how fast you need results — see the KPI-based pricing above for the exact range by solution."
+    },
+    {
+      "title": "Want the full breakdown of what drives the number?",
+      "answer": "See our complete cost breakdown guide — scope, complexity, timeline, and real pricing examples by business size, from local to enterprise."
+    }
+  ]
+}

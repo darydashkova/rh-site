@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Nike",
+    "subtitle": "CEO Communication Failure",
+    "image": "/images/nike-logo.png",
+    "description": "CEO publicly admitted the recovery was slow — without a forward-looking narrative. The statement was indexed within minutes. Shares fell 14–15% to a 10-year low in one session.",
+    "label": "MECHANIC",
+    "explanation": "Every public statement by a senior executive becomes a permanent part of the digital profile. It surfaces in every future due diligence — years later."
+  },
+  {
+    "title": "Supermicro",
+    "subtitle": "Regulatory Escalation",
+    "image": "/images/supermicro-logo.png",
+    "description": "One internal compliance signal went unmanaged. It was followed by a regulator investigation, auditor resignation, and government contracts placed at risk.",
+    "label": "MECHANIC",
+    "explanation": "Preventive work costs a fraction of responding after a regulator intervenes. One unclosed signal started a cascade that lasted months."
+  },
+  {
+    "title": "University system hack",
+    "subtitle": "Crisis Without Narrative Management",
+    "image": "/images/lexisnexis-logo.png",
+    "description": "CEO issued a public apology. Reuters published it. That article is now permanently indexed — surfacing in every investor and partner due diligence that follows.",
+    "label": "SOURCE: LEXISNEXIS 2026",
+    "explanation": "Monitoring negative news is now mandatory in due diligence, not an optional add-on."
+  }
+]

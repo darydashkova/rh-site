@@ -1,0 +1,216 @@
+{
+  "description": "Answers to the most common questions about protecting brand reputation across search engines, AI systems, and media from Reputation House — a global digital risk protection company with offices in Dubai and Hong Kong",
+  "intro": [
+    "What's included in FAQ",
+    "Your Questions About ORM, SERM, and Digital Risk Protection —Answered by Practitioners",
+    "This reputation management FAQ from Reputation House answers the most searched questions about online reputation management — from how ORM and SERM work in practice, to how AI systems like ChatGPT and Google AI Mode shape brand perception, to what happens when a crisis is already underway. We work with international fintech companies, pharmaceutical brands, enterprise B2B firms, and executives preparing for M&A or investment rounds. Our answers reflect real-world engagements, not textbook definitions.",
+    "To assess your current digital risk exposure, run a free Risk Check",
+    "delivered within 3 minutes, no commitment required"
+  ],
+  "groups": [
+    {
+      "title": "What Is Digital Reputation Risk?",
+      "questions": [
+        {
+          "title": "What is digital reputation risk, and why does it affect revenue?",
+          "answer": "Digital reputation risk is the measurable financial exposure a business carries when negative, inaccurate, or unmanaged information about it surfaces in search results, AI answers, reviews, or social media. It isn't a PR concern — it shows up directly as lost deals, harder fundraising, and lower valuations, because banks, investors, and partners now form a judgment about a company before they ever speak to it. Reputation House treats it as a business‑risk category — Digital Risk Protection (DRP) — not a communications add‑on."
+        },
+        {
+          "title": "What is Online Reputation Management (ORM)?",
+          "answer": "ORM is the practice of monitoring, shaping, and protecting how a brand or individual is perceived across digital channels — search results, reviews, social platforms, and increasingly AI‑generated answers. Reputation House runs ORM as one part of a broader DRP program, tied to what that perception actually costs the business, rather than as a standalone communications service."
+        },
+        {
+          "title": "What's the difference between ORM and SERM?",
+          "answer": "SERM (Search Engine Reputation Management) is narrower: it focuses specifically on what appears on the Google results page for a name or brand. ORM is the umbrella — search, reviews, social mentions, and AI answers together. See how RH runs SERM as a standalone product → SERM (Search Engine Reputation)."
+        },
+        {
+          "title": "What causes a reputation crisis?",
+          "answer": "The most common triggers are damaging search results, a wave of negative reviews after an incident, a coordinated attack or impersonation campaign, a data leak, or a narrative gap — where what a company says publicly diverges from what a whistleblower, journalist or regulator later confirms. That last pattern is well documented: independent trackers logged 16+ US securities‑fraud cases in 2026 where a company's public narrative diverged from reality and the market reacted within a single trading day — Wix (−27%), Rackspace (−33%) and Gildan Activewear (−18.75%) among them (Morningstar, BFA Law filings). Catching that gap early, not just the eventual headline, is what Reputation Monitoring is built for."
+        },
+        {
+          "title": "What does it cost to ignore digital reputation?",
+          "answer": "Left unmanaged, reputation risk shows up as lower conversion rates, harder hiring, partners declining to engage, and investors hesitating during due diligence — costs that rarely get attributed back to \"reputation\" until after the fact. It compounds quietly and then surfaces suddenly, which is why the pattern above tends to look sudden from the outside even though the gap was visible for months beforehand."
+        }
+      ]
+    },
+    {
+      "title": "How AI & Search Shape Your Reputation",
+      "questions": [
+        {
+          "title": "How do AI systems like ChatGPT and Perplexity affect brand reputation?",
+          "answer": "AI systems synthesize information from across the web — news, reviews, forums, a company's own site — into a single, authoritative‑sounding answer, without showing sources the way a search results page does. If that synthesis is wrong, outdated, or shaped by one negative source, the person asking rarely checks further. One industry report found 80% of brands are already mentioned in AI answers, but only 15% actively manage what those answers say (Birdeye AI Search Report, 2026) — that gap between being mentioned and being represented accurately is where most of the current risk sits."
+        },
+        {
+          "title": "What's the difference between AI monitoring and AI influence?",
+          "answer": "They're two different products. AI Monitoring watches what ChatGPT, Gemini and Perplexity say about a brand and alerts on a wrong or damaging answer — it doesn't touch the output. AI Influence (AI reputation management) goes further and actively corrects the sources those systems draw from, so the answer itself changes."
+        },
+        {
+          "title": "What is Google AI Mode, and why does it matter for reputation?",
+          "answer": "Google AI Mode replaces a portion of traditional results with a synthesized AI answer pulled from multiple sources into one response, instead of ten ranked pages. It means reputation work increasingly has to influence what feeds that synthesis, not just where a page ranks."
+        },
+        {
+          "title": "Can AI‑generated misinformation about a company or person be corrected?",
+          "answer": "In most cases, yes — not by editing the model directly, but by correcting or reinforcing the sources it draws the answer from, which is what a well‑run AI Influence Services targets. It's slower than a single takedown request and plays out over weeks, not hours."
+        },
+        {
+          "title": "What is social listening, and how does it protect reputation?",
+          "answer": "Social listening is real‑time monitoring of what's said about a brand across social media, forums, video and news, built to catch an early signal before it becomes a wider story. It's a Detection‑level product, narrower than full media monitoring — it covers mentions specifically, not the whole information field."
+        }
+      ]
+    },
+    {
+      "title": "Reputation House — What We Do",
+      "questions": [
+        {
+          "title": "What does Reputation House do?",
+          "answer": "Reputation House is a digital risk protection (DRP) company: it helps brands and individuals see, manage, and defend how they're perceived across Google search, AI‑generated answers, reviews and media — and ties that perception to a measurable financial exposure, not just sentiment. Every engagement runs on one platform, Risk Control Center, paired with an analyst or account team."
+        },
+        {
+          "title": "What services does Reputation House provide?",
+          "answer": "Four managed programs, each covering a different risk state: \nRH Detection (early‑warning monitoring), \nRH Control (ongoing management of search, reviews, narrative and AI answers), \nRH Defence (active‑crisis response), and \nRH Personal (the same, for individuals rather than companies). \n\nUnderneath those sit 13 named products — from SERM and AI reputation management to employer branding and business media presence — see the full breakdown in \"Our Products,\" tab 4. Every relationship can start with a free Risk Check."
+        },
+        {
+          "title": "How is Reputation House different from a PR agency?",
+          "answer": "A PR agency is generally measured on media placements and share of voice. Reputation House is built around a platform that monitors five specific channels — search, AI answers, reviews, social mentions, narrative sentiment — continuously, and ties findings to a dollar figure of exposure rather than a clip count. It doesn't buy reviews, guarantee removals, or use fake engagement."
+        },
+        {
+          "title": "Does Reputation House work with personal reputation, not just brands?",
+          "answer": "Yes — Personal Reputation Management is a separate track for founders, executives, board members and investors whose personal digital footprint affects deals, licensing, or due diligence. It's confidential and NDA‑first by default, not a personal‑branding or celebrity‑PR service."
+        }
+      ]
+    },
+    {
+      "title": "Our Products",
+      "questions": [
+        {
+          "title": "What products does Reputation House offer?",
+          "answer": "Reputation House runs four main programs:\nRH Detection\nRH Control \nRH Defence \nRH Personal \n— each built on the same technology platform, Risk Control Center (RCC), plus a dedicated analyst or account team. Every engagement can start with a free Risk Check. Also we have Online Helper — answer 4 quick questions about your situation and we'll match you to the right solution or strategy."
+        },
+        {
+          "title": "What is Risk Check, and is it really free?",
+          "answer": "Yes. Risk Check is a free scan that shows what banks, investors, journalists and AI assistants find about you — across Google search, AI answers (ChatGPT, Gemini, Perplexity) and reviews — in about 3 minutes. You sign up with an email to see the report; there's no cost and no obligation to buy anything after. It's the entry point into every RH program, not a paid product on its own."
+        },
+        {
+          "title": "What is the Risk Control Center?",
+          "answer": "Risk Control Center is Reputation House's monitoring platform: five modules — search results (SERP), social & web mentions (SCAN), AI answers (AI Presence), reviews, and narrative & sentiment analytics — in one dashboard with alerts. It isn't sold as a stand‑alone self‑serve tool: RCC is always delivered inside one of the four programs below, with an analyst team reading the data. A point product like SERM gets access to just its module."
+        },
+        {
+          "title": "What is RH Detection, and what does it include?",
+          "answer": "RH Detection is early‑warning monitoring across your whole information field — it flags risk before it costs money, without changing what's published (that's Control) or fighting an active crisis (that's Defence).\nIncluded products\nReputation Monitoring — ongoing media & mention tracking\nSocial listening — real‑time social, forum & video mentions\nBrand Audit / Brand Insight — a one‑off information‑field report ahead of a strategy or funding round\nAI Brand Monitoring — what ChatGPT, Gemini & Perplexity say about you →\nDigital Risk Protection (DRP) — fake domains, impersonation, leaks, priced in dollars of exposure\nPrice: Retainer · from ~$5,000/mo"
+        },
+        {
+          "title": "What is RH Control, and how is it different from RH Detection?",
+          "answer": "Where Detection watches, RH Control actively manages your information field — search results, reviews, narrative and AI answers — on an ongoing basis. It splits into Influence (correcting what's already out there) and Build (creating a presence where none exists yet).\n\nInfluence\nSERM (Search Engine Reputation) \nOnline Review Management\nRemove Negative Content — fast, one‑off takedowns\nAI Reputation Management — correcting what AI assistants say\nBrand Positioning Management — keeping market narrative aligned with reality\nBuild\nBrand Launch Strategy / Market Entry — reputation for a new market or a rebrand\nEmployer Branding — managed Glassdoor reviews and employer narrative\nBusiness Media Presence — coherent coverage in trade & business media\nPrice: Retainer · from ~$10,000/mo"
+        },
+        {
+          "title": "What is RH Defence, and when do we need it?",
+          "answer": "RH Defence is for an active crisis — a viral attack, a coordinated smear, a leak — not a background SERM job. It's project‑based with a crisis surcharge, and deploys a priority team within hours across search, social, AI and media.\nIncluded products\nCrisis Management — the acute, \"we're being hit right now\" response\nBrand Protection — coordinated attacks, brigading, brand impersonation\nOnline Reputation Repair — rebuilding search results under public pressure, within the law and without removal guarantees\nPrice: Project + crisis surcharge · active phase from ~$50,000"
+        },
+        {
+          "title": "What is RH Personal, and who is it for?",
+          "answer": "RH Personal manages the digital profile of an individual, not a company — owners, founders, executives, investors — whose personal footprint affects deals, licenses and due diligence. It isn't personal PR or personal branding: it's NDA‑first and framed around access (bank accounts, KYC, partner approval), not image.\n\nProtect:\nPersonal Monitoring\nBuild:\nPersonal Reputation Building\nPublic-Figure Reputation Management\nRepair:\nPersonal Reputation Repair \nCrisis:\nPersonal Crisis Response \nThe full managed umbrella — Personal Reputation Management.\n\nPrice: Retainer · from ~$5,000/mo (Crisis: project, from ~$25,000)"
+        },
+        {
+          "title": "How much do Reputation House's products cost?",
+          "answer": "There's no published flat price — cost depends on scope, risk level and region, set after a confidential consultation, not a rate card. As a starting reference: Detection and Control run as monthly retainers (from roughly $5,000 and $10,000), Defence and Personal Crisis are project‑based with a crisis surcharge (from about $50,000 and $25,000), and Personal retainers start around $5,000/month. Every engagement can start with a free Risk Check before any commercial conversation. Full pricing logic."
+        },
+        {
+          "title": "Which RH product is right for my situation?",
+          "answer": "As a rule of thumb: \nWant to see risk early → Detection. \nNeed to actively manage search results, reviews, narrative and AI answers day to day → Control. \nAlready under attack → Defence. \nThe exposure is personal — a founder, executive or investor, not the company → Personal. \nTry our Online helper: answer 4 quick questions about your situation and we'll match you to the right solution or strategy. For a guided breakdown, see Reputation services for companies or Reputation services for individuals, or start with a free Risk Check."
+        }
+      ]
+    },
+    {
+      "title": "Industries & Who We Work With",
+      "questions": [
+        {
+          "title": "What industries does Reputation House specialize in?",
+          "answer": "Fintech, pharma and biotech, B2B and enterprise SaaS, automotive, FMCG, and professional services — sectors where a search result, a review, or an AI answer directly affects a regulatory review, a partnership decision, or a purchase."
+        },
+        {
+          "title": "How does reputation management apply to fintech specifically?",
+          "answer": "Regulators, institutional partners and retail users all research a fintech platform before committing — its search results and AI answers function almost like an informal compliance check. Keeping that layer accurate and current is part of staying investable, not just presentable."
+        },
+        {
+          "title": "Can reputation management help with M&A or a funding round?",
+          "answer": "Yes, and increasingly it needs to happen earlier than most teams expect. Reputational due diligence now tends to run in parallel with financial due diligence rather than after it, often starting before a first investor call rather than at the term sheet stage. A pre‑strategy information‑field review is usually the first step."
+        },
+        {
+          "title": "Do you work with companies outside English‑speaking markets?",
+          "answer": "Yes — Reputation House operates from offices in Dubai and Hong Kong, with client work spanning 187 countries and 45 languages, and a particular concentration of experience across MENA, the US and Europe."
+        }
+      ]
+    },
+    {
+      "title": "How the Process Works",
+      "questions": [
+        {
+          "title": "What's the first step in reputation management?",
+          "answer": "A diagnostic. For most clients that starts with the free Risk Check — a 3‑minute scan of search, AI answers and reviews — and for a deeper pre‑strategy view, a full Brand Audit / Brand Insight report that maps the entire information field, competitor positioning and hidden risk before a program is scoped."
+        },
+        {
+          "title": "How does SERM work in practice?",
+          "answer": "SERM starts by identifying what's currently ranking for a brand or name, then builds and promotes accurate, positive or neutral content to outrank what's harmful — combined, where policy or law allows, with formal removal requests. It's an ongoing process, not a one‑time push, because results shift as new content publishes."
+        },
+        {
+          "title": "What is Business Media Presence, and how does it support reputation?",
+          "answer": "Business Media Presence is coverage in business and trade publications — earned through research and relevance, not press‑release distribution — that becomes part of a company's permanent digital profile and helps outweigh negative or thin results in search and AI answers. It isn't run as a PR campaign around a launch moment; it's a sustained presence built over months."
+        },
+        {
+          "title": "Do you remove negative content from Google?",
+          "answer": "Sometimes, and only within the law — for content that violates a platform's own policies, exposes personal data under GDPR/CCPA, or has been found defamatory in a formal ruling. Most negative content can't legally be forced off the internet, so the more common approach is suppression: outranking it with accurate, stronger content. Check removal page for more details."
+        },
+        {
+          "title": "Is reputation management legal and ethical?",
+          "answer": "Yes, when it's run the way RH runs it: legitimate SEO and content practices, earned media coverage, and real reviews. What it never includes is fake reviews, bought engagement, or a promise to \"delete everything.\" Search engines penalize manipulation, not accurate representation."
+        }
+      ]
+    },
+    {
+      "title": "Results, Timelines & ROI",
+      "questions": [
+        {
+          "title": "How long does reputation management take?",
+          "answer": "It runs on three horizons: 4–8 weeks for a focused response to an acute issue, 3–6 months for a mid‑scope program — establishing SERM control or building a new market presence— and 6–18 months for full information‑field management under RH Control. Crisis response under RH Defence moves faster: a priority team deploys within hours."
+        },
+        {
+          "title": "How do you measure results?",
+          "answer": "Against the same five signals RH monitors continuously: search ranking positions, sentiment and Share of Voice, review ratings, AI‑answer accuracy, and an overall risk score. Every metric maps to a module in Risk Control Center, so progress is visible in the same dashboard used for monitoring, not a separate report."
+        },
+        {
+          "title": "What ROI can I expect from reputation management?",
+          "answer": "The clearest published figure is on CEO reputation specifically: Weber Shandwick's CEO Reputation Premium research attributes roughly 44–45% of a company's market capitalization to CEO reputation — a number the same study notes fewer than 1 in 5 CEOs feel confident is being actively managed. Company‑wide, businesses with a strong, well‑managed reputation convert at meaningfully higher rates than those without one — trust removes friction at the decision point, whether that's a purchase, a partnership, or an investment."
+        },
+        {
+          "title": "How much does reputation management cost?",
+          "answer": "There's no flat rate — cost is scoped to risk level, industry and region after a free Risk Check. As a public reference point: RH Detection and Control run as monthly retainers from around $5,000 and $10,000, RH Defence is project‑based from about $50,000 for the active crisis phase, and RH Personal retainers start near $5,000/month. \nFull pricing logic."
+        },
+        {
+          "title": "Can you manage a reputation crisis that's already happening?",
+          "answer": "Yes — Crisis Management exists specifically for this. A priority team deploys within hours, not the next business day, across search, social, AI answers and media, to contain the spread and start rebuilding the narrative while the situation is still active."
+        }
+      ]
+    },
+    {
+      "title": "Legal, Ethics & Confidentiality",
+      "questions": [
+        {
+          "title": "Is my information kept confidential?",
+          "answer": "Yes. Every engagement runs under NDA from day one, with GDPR‑compliant data handling — treated as a baseline requirement, not an add‑on, and applied at the same standard across RH Personal's persona‑level work, where discretion matters most."
+        },
+        {
+          "title": "Will Google penalize my site for using reputation management?",
+          "answer": "No, provided the methods are legitimate — RH doesn't use link schemes, bought traffic, fake clicks, or manipulative SEO tactics that would trigger a penalty. The work is built on accurate content and earned coverage, which search engines reward rather than penalize."
+        },
+        {
+          "title": "Can reputation management help with a GDPR Right‑to‑be‑Forgotten request?",
+          "answer": "Yes — either through a formal de‑listing request where it qualifies, or by reducing a result's visibility through SERM when full removal isn't legally available. The two approaches are often combined."
+        },
+        {
+          "title": "How do I get started with Reputation House?",
+          "answer": "Start with a free Risk Check — a 3‑minute scan across search, AI answers and reviews, no cost and no obligation. From there, RH scopes an individual program based on what the scan and a short consultation surface, rather than selling a fixed package upfront. Or try our online helper: answer 4 quick questions about your situation and we'll match you to the right solution or strategy. You can also contact us any convenient way — we will reply within 24-hours."
+        }
+      ]
+    }
+  ]
+}

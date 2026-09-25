@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Submit",
+    "number": "01",
+    "description": "You send us your case — as much or as little as you know. Our team reaches out to understand it properly before anything else.",
+    "note": "We ask before we assume. Context comes before strategy."
+  },
+  {
+    "title": "Strategize",
+    "number": "02",
+    "description": "We prepare a personal strategy built specifically around your situation, and present it to you directly.",
+    "note": "No pressure, no prepayment. You see the plan before you commit to anything."
+  },
+  {
+    "title": "Decide",
+    "number": "03",
+    "description": "The decision to move forward is entirely yours — and it's the only thing that starts the work.",
+    "note": "Full cooperation begins only once you say yes."
+  }
+]

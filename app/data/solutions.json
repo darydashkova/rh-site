@@ -1,0 +1,265 @@
+{
+  "intro": "Two ways to find your footing below: a free audit if you’re not sure anything’s wrong, or four quick questions if you know something needs fixing but not what exactly or how. Already know your answer? Skip straight to your area.",
+  "helpers": [
+    {
+      "label": "Guided Match",
+      "title": "Know something needs fixing, not sure what?",
+      "description": "Answer 4 quick questions about your situation, even if you're not sure whether it's a company issue or a personal one, and we'll match you to the right solution or strategy.",
+      "tags": ["1 minute", "Free", "4 questions"],
+      "action": "Try Online Helper",
+      "href": "https://strategy.reputation.house/strategy/"
+    },
+    {
+      "label": "Free online Diagnostic",
+      "title": "Not sure if anything's wrong?",
+      "description": "Run a free online audit of your digital profile across search, mentions, AI answers, reviews and narrative — see exactly where you stand before deciding what to do next.",
+      "tags": ["3 minutes", "Free", "no commitment"],
+      "action": "Start a free Risk Check",
+      "href": "https://checkmyrisks.com/?utm_source=reputation_house&utm_medium=referral&utm_campaign=homepage&utm_content=not_sure_diagnostic"
+    }
+  ],
+  "groups": [
+    {
+      "id": "detection",
+      "title": "Detection Solutions",
+      "description": "See risk before it's public",
+      "audience": "companies",
+      "href": "https://reputation.house/rh-detection",
+      "services": [
+        {
+          "program": "RH Detection",
+          "title": "Reputation Monitoring",
+          "description": "Continuous monitoring of the entire information field; experts interpret signals and activate on risk.",
+          "href": "https://reputation.house/online-reputation-monitoring"
+        },
+        {
+          "program": "RH Detection",
+          "title": "Social Listening",
+          "description": "Real-time media monitoring of your brand across social platforms, forums, blogs, video and press.",
+          "href": "https://reputation.house/social-listening"
+        },
+        {
+          "program": "RH Detection",
+          "title": "AI Brand Monitoring",
+          "description": "Tracking how ChatGPT, Gemini, Perplexity and other AI describe the brand.",
+          "href": "https://reputation.house/ai-brand-monitoring"
+        },
+        {
+          "program": "RH Detection",
+          "title": "Digital Risk Protection",
+          "description": "Detect external digital threats and quantify their financial exposure.",
+          "href": "https://reputation.house/digital-risk-protection"
+        },
+        {
+          "program": "RH Detection",
+          "title": "Brand Audit / Brand Insight",
+          "description": "One-time analytical map of the information field: HR, corporate, product, competitors — as a basis for risk.",
+          "href": "https://reputation.house/brand-audit"
+        }
+      ]
+    },
+    {
+      "id": "control",
+      "title": "Control Solutions",
+      "description": "Manage what the market finds",
+      "audience": "companies",
+      "href": "https://reputation.house/rh-control",
+      "services": [
+        {
+          "program": "RH Control · Influence",
+          "title": "Brand Reputation Management",
+          "description": "Strategic, ongoing management of search, narrative, content and AI presentation across the whole field.",
+          "href": "https://reputation.house/brand-reputation-services"
+        },
+        {
+          "program": "RH Control · Influence",
+          "title": "SERM (Search Engine Reputation)",
+          "description": "Reshape search results so high-stakes queries stop costing deals.",
+          "href": "https://reputation.house/serm-services"
+        },
+        {
+          "program": "RH Control · Influence",
+          "title": "Brand Positioning Management",
+          "description": "Strategic management of narrative, content and how the brand is presented across media and AI.",
+          "href": "https://reputation.house/brand-positioning-services"
+        },
+        {
+          "program": "RH Control · Influence",
+          "title": "AI Reputation Management",
+          "description": "Manage how AI assistants and LLM answers describe the brand.",
+          "href": "https://reputation.house/ai-influence-services"
+        },
+        {
+          "program": "RH Control · Influence",
+          "title": "Online Review Management",
+          "description": "Monitor and manage review-platform pressure — Trustpilot, Google, app stores.",
+          "href": "https://reputation.house/online-review-management"
+        },
+        {
+          "program": "RH Control · Build",
+          "title": "Brand Launch Strategy",
+          "description": "Construct a positive information field from zero on a new market or for a new brand.",
+          "href": "https://reputation.house/brand-launch-strategy"
+        },
+        {
+          "program": "RH Control · Build",
+          "title": "Employer Branding",
+          "description": "Build and protect the employer brand across review, search and social so hiring isn't undermined.",
+          "href": "https://reputation.house/employer-reputation-management"
+        },
+        {
+          "program": "RH Control · Build",
+          "title": "Business Media Presence",
+          "description": "Risk-driven presence in business and industry media as profile integrity, not vanity PR.",
+          "href": "https://reputation.house/business-media-presence"
+        }
+      ]
+    },
+    {
+      "id": "defence",
+      "title": "Defence Solutions",
+      "description": "Contain an active crisis",
+      "audience": "companies",
+      "href": "https://reputation.house/rh-defence",
+      "services": [
+        {
+          "program": "RH Defence",
+          "title": "Crisis Management",
+          "description": "Emergency anti-crisis: priority team, suppression of negativity, 24/7 monitoring, counter-narrative.",
+          "href": "https://reputation.house/crisis-management-agency"
+        },
+        {
+          "program": "RH Defence",
+          "title": "Brand Protection",
+          "description": "Keep brigading, brandjacking and fake reviews from becoming your brand crisis.",
+          "href": "https://reputation.house/brand-protection-solution"
+        },
+        {
+          "program": "RH Defence",
+          "title": "Reputation Repair & Negative Suppression",
+          "description": "Repair and suppress damaging content under active pressure.",
+          "href": "https://reputation.house/online-reputation-repair"
+        }
+      ]
+    },
+    {
+      "id": "protect",
+      "title": "Protect",
+      "description": "See Your Online Reputation Before It Affects You",
+      "audience": "individuals",
+      "href": "",
+      "services": [
+        {
+          "program": "RH Personal · Protect",
+          "title": "Personal Reputation Management",
+          "description": "Turnkey management of your digital profile across monitoring, presence, repair and crisis — profile integrity, not personal PR.",
+          "href": "https://reputation.house/personal-online-reputation"
+        },
+        {
+          "program": "RH Personal · Protect",
+          "title": "Personal Monitoring",
+          "description": "Personal monitoring and digital-profile protection for top managers, owners and public figures.",
+          "href": "https://reputation.house/personal-reputation-monitoring"
+        }
+      ]
+    },
+    {
+      "id": "build",
+      "title": "Build",
+      "description": "Create a Strong Online Reputation From Scratch",
+      "audience": "individuals",
+      "href": "",
+      "services": [
+        {
+          "program": "RH Personal · Build",
+          "title": "Personal Reputation Building",
+          "description": "Build a coherent, credible digital presence from close to zero.",
+          "href": "https://reputation.house/personal-reputation-building"
+        },
+        {
+          "program": "RH Personal · Build",
+          "title": "Public-Figure Reputation Management",
+          "description": "A coherent, defensible public profile for a public figure, without vanity PR.",
+          "href": "https://reputation.house/public-figure-reputation-management"
+        }
+      ]
+    },
+    {
+      "id": "repair",
+      "title": "Repair",
+      "description": "Clear Old or Outdated Online Reputation History",
+      "audience": "individuals",
+      "href": "",
+      "services": [
+        {
+          "program": "RH Personal · Repair",
+          "title": "Personal Reputation Repair",
+          "description": "Repair chronic personal negativity in search and AI, and realign an outdated digital footprint after an exit or role change — without publicity.",
+          "href": "https://reputation.house/personal-reputation-repair"
+        }
+      ]
+    },
+    {
+      "id": "crisis",
+      "title": "Crisis",
+      "description": "Contain an Active Online Reputation Scandal",
+      "audience": "individuals",
+      "href": "",
+      "services": [
+        {
+          "program": "RH Personal · Crisis",
+          "title": "Personal Crisis Response",
+          "description": "Acute crisis containment for someone whose reputation is hitting the business; priority response, 24/7, counter-narrative.",
+          "href": "https://reputation.house/personal-reputation-crisis"
+        }
+      ]
+    }
+  ],
+  "situations": [
+    {
+      "title": "\"They Google us and find the wrong thing\"",
+      "action": "SERM (SEARCH ENGINE REPUTATION)",
+      "href": "https://reputation.house/serm-services"
+    },
+    {
+      "title": "\"I want to delete wrong and harmful information about myself or brand\"",
+      "action": "REMOVE NEGATIVECONTENT",
+      "href": "https://reputation.house/remove-negative-content"
+    },
+    {
+      "title": "\"There's a public crisis right now. We don't know what to do\"",
+      "action": "CRISIS MANAGEMENT",
+      "href": "https://reputation.house/crisis-management-agency"
+    },
+    {
+      "title": "\"A owner or C-level is in a public scandal which affecting business\"",
+      "action": "PERSONAL CRISIS RESPONSE",
+      "href": "https://reputation.house/personal-reputation-crisis"
+    },
+    {
+      "title": "\"I want a complete control of the information field and narratives online.\"",
+      "action": "BRAND POSITIONING MANAGEMENT",
+      "href": "https://reputation.house/brand-positioning-services"
+    },
+    {
+      "title": "\"We need to see everything that is said about our brand, without blind spots.\"",
+      "action": "REPUTATION MONITORING",
+      "href": "https://reputation.house/online-reputation-monitoring"
+    },
+    {
+      "title": "\"AI is saying the wrong thing about us – we want to fix it.\"",
+      "action": "AI REPUTATION MANAGEMENT",
+      "href": "https://reputation.house/ai-influence-services"
+    },
+    {
+      "title": "\"We found reviews against us on Trustpilot, Google, and other platforms.\"",
+      "action": "ONLINE REVIEW MANAGEMENT",
+      "href": "https://reputation.house/online-review-management"
+    },
+    {
+      "title": "\"I want to build brand's online reputation through media coverage\"",
+      "action": "BUSINESS MEDIA PRESENCE",
+      "href": "https://reputation.house/business-media-presence"
+    }
+  ]
+}
