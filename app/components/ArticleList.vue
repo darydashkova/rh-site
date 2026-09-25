@@ -7,10 +7,10 @@ defineProps<{
 <template>
   <div class="article-list" :class="`article-list--${variant}`">
     <article v-for="item in items" :key="item.href" class="article-row">
-      <a :href="item.href" class="article-image" tabindex="-1" aria-hidden="true"><img :src="item.image" :alt="item.alt" loading="lazy" /></a>
+      <SiteLink :href="item.href" class="article-image" tabindex="-1" aria-hidden="true"><img :src="item.image" :alt="item.alt" loading="lazy" /></SiteLink>
       <div class="article-copy">
         <time v-if="variant === 'news'" :datetime="item.date">{{ item.dateLabel }}</time>
-        <h2><a :href="item.href">{{ item.title }}</a></h2>
+        <h2><SiteLink :href="item.href">{{ item.title }}</SiteLink></h2>
         <p v-if="item.description">{{ item.description }}</p>
         <time v-if="variant === 'calculator' || variant === 'compact'" :datetime="item.date">{{ item.dateLabel }}</time>
       </div>

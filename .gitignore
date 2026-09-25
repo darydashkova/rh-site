@@ -1,6 +1,8 @@
 node_modules
 .nuxt
 .output
+.pages
+/dist/
 .data
 reference.html
 scripts/reference/

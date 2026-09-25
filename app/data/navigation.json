@@ -1,11 +1,11 @@
 [
   {
     "label": "Solutions",
-    "to": "https://reputation.house/solutions",
+    "to": "/solutions",
     "items": [
       {
         "label": "For Companies",
-        "to": "https://reputation.house/reputation-services-for-companies",
+        "to": "/reputation-services-for-companies",
         "sections": [
           {
             "label": "#detection",
@@ -13,23 +13,23 @@
             "items": [
               {
                 "label": "Reputation Monitoring",
-                "to": "https://reputation.house/online-reputation-monitoring"
+                "to": "/online-reputation-monitoring"
               },
               {
                 "label": "Social Listening",
-                "to": "https://reputation.house/social-listening"
+                "to": "/social-listening"
               },
               {
                 "label": "Brand Audit / Brand Insight",
-                "to": "https://reputation.house/brand-audit"
+                "to": "/brand-audit"
               },
               {
                 "label": "AI Brand Monitoring",
-                "to": "https://reputation.house/ai-brand-monitoring"
+                "to": "/ai-brand-monitoring"
               },
               {
                 "label": "Digital Risk Protection",
-                "to": "https://reputation.house/digital-risk-protection"
+                "to": "/digital-risk-protection"
               }
             ]
           },
@@ -39,15 +39,15 @@
             "items": [
               {
                 "label": "Crisis Management",
-                "to": "https://reputation.house/crisis-management-agency"
+                "to": "/crisis-management-agency"
               },
               {
                 "label": "Remove Negative Content",
-                "to": "https://reputation.house/online-reputation-repair"
+                "to": "/online-reputation-repair"
               },
               {
                 "label": "Brand Protection",
-                "to": "https://reputation.house/brand-protection-services"
+                "to": "/brand-protection-services"
               }
             ]
           },
@@ -57,35 +57,35 @@
             "items": [
               {
                 "label": "Brand Reputation Management",
-                "to": "https://reputation.house/brand-reputation-services"
+                "to": "/brand-reputation-services"
               },
               {
                 "label": "SERM (Search Engine Reputation)",
-                "to": "https://reputation.house/serm-services"
+                "to": "/serm-services"
               },
               {
                 "label": "Online Review Management",
-                "to": "https://reputation.house/online-review-management"
+                "to": "/online-review-management"
               },
               {
                 "label": "AI Reputation Management",
-                "to": "https://reputation.house/ai-influence-services"
+                "to": "/ai-influence-services"
               },
               {
                 "label": "Brand Positioning Management",
-                "to": "https://reputation.house/brand-positioning-services"
+                "to": "/brand-positioning-services"
               },
               {
                 "label": "Brand Launch Strategy / Market Entry",
-                "to": "https://reputation.house/brand-launch-strategy"
+                "to": "/brand-launch-strategy"
               },
               {
                 "label": "Employer Branding",
-                "to": "https://reputation.house/employer-reputation-management"
+                "to": "/employer-reputation-management"
               },
               {
                 "label": "Business Media Presence",
-                "to": "https://reputation.house/business-media-presence"
+                "to": "/business-media-presence"
               }
             ]
           }
@@ -93,7 +93,7 @@
       },
       {
         "label": "For Individuals",
-        "to": "https://reputation.house/reputation-services-for-individuals",
+        "to": "/reputation-services-for-individuals",
         "sections": [
           {
             "label": "#protect",
@@ -101,11 +101,11 @@
             "items": [
               {
                 "label": "Personal Reputation Management",
-                "to": "https://reputation.house/personal-online-reputation"
+                "to": "/personal-online-reputation"
               },
               {
                 "label": "Personal Monitoring",
-                "to": "https://reputation.house/personal-reputation-monitoring"
+                "to": "/personal-reputation-monitoring"
               }
             ]
           },
@@ -115,11 +115,11 @@
             "items": [
               {
                 "label": "Personal Reputation Building",
-                "to": "https://reputation.house/personal-reputation-building"
+                "to": "/personal-reputation-building"
               },
               {
                 "label": "Public-Figure Reputation Management",
-                "to": "https://reputation.house/public-figure-reputation-management"
+                "to": "/public-figure-reputation-management"
               }
             ]
           },
@@ -129,7 +129,7 @@
             "items": [
               {
                 "label": "Personal Reputation Repair",
-                "to": "https://reputation.house/personal-reputation-repair"
+                "to": "/personal-reputation-repair"
               }
             ]
           },
@@ -139,7 +139,7 @@
             "items": [
               {
                 "label": "Personal Crisis Response",
-                "to": "https://reputation.house/personal-reputation-crisis"
+                "to": "/personal-reputation-crisis"
               }
             ]
           }
@@ -151,7 +151,7 @@
       "actions": [
         {
           "label": "All solutions",
-          "to": "https://reputation.house/solutions",
+          "to": "/solutions",
           "variant": "filled"
         },
         {
@@ -165,37 +165,37 @@
   },
   {
     "label": "By Situation",
-    "to": "https://reputation.house/",
+    "to": "/",
     "items": [
       {
         "label": "Remove Negative Content",
-        "to": "https://reputation.house/remove-negative-content"
+        "to": "/remove-negative-content"
       },
       {
         "label": "Reputation Audit",
-        "to": "https://reputation.house/reputation-audit"
+        "to": "/reputation-audit"
       },
       {
         "label": "CIS Market Entry",
-        "to": "https://reputation.house/cis-market-entry-strategy"
+        "to": "/cis-market-entry-strategy"
       },
       {
         "label": "China Market Entry",
-        "to": "https://reputation.house/china-market-entry-strategy"
+        "to": "/china-market-entry-strategy"
       },
       {
         "label": "AI-Powered Risk Protection",
-        "to": "https://reputation.house/ai-digital-reputation-protection"
+        "to": "/ai-digital-reputation-protection"
       }
     ]
   },
   {
     "label": "Pricing",
-    "to": "https://reputation.house/reputation-management-pricing"
+    "to": "/reputation-management-pricing"
   },
   {
     "label": "Risk Control Center",
-    "to": "https://reputation.house/risk-control-center",
+    "to": "/risk-control-center",
     "items": [
       {
         "label": "Risk Check",
@@ -205,22 +205,22 @@
       },
       {
         "label": "RH Defence",
-        "to": "https://reputation.house/rh-defence",
+        "to": "/rh-defence",
         "description": "Rapid crisis response and removal of harmful content when reputation is under attack."
       },
       {
         "label": "RH Detection",
-        "to": "https://reputation.house/rh-detection",
+        "to": "/rh-detection",
         "description": "Continuous monitoring of mentions, reviews, and search results across the web."
       },
       {
         "label": "RH Personal",
-        "to": "https://reputation.house/rh-personal",
+        "to": "/rh-personal",
         "description": "Reputation protection and repair built for executives, founders, and public figures."
       },
       {
         "label": "RH Control",
-        "to": "https://reputation.house/rh-control",
+        "to": "/rh-control",
         "description": "Shape your search results and narrative to reflect the reputation you want."
       }
     ],
@@ -229,7 +229,7 @@
       "actions": [
         {
           "label": "Open Risk Control Center",
-          "to": "https://reputation.house/risk-control-center",
+          "to": "/risk-control-center",
           "variant": "filled"
         }
       ]
@@ -237,11 +237,11 @@
   },
   {
     "label": "Resources",
-    "to": "https://reputation.house/",
+    "to": "/",
     "items": [
       {
         "label": "Case Studies",
-        "to": "https://reputation.house/case-studies",
+        "to": "/case-studies",
         "description": "Real client stories showing how reputation threats were detected and resolved."
       },
       {
@@ -251,43 +251,43 @@
       },
       {
         "label": "News",
-        "to": "https://reputation.house/news",
+        "to": "/news",
         "description": "Company updates, product releases, and reputation-industry headlines."
       },
       {
         "label": "Risk Calculator",
-        "to": "https://reputation.house/risk-calculator",
+        "to": "/risk-calculator",
         "description": "Answer a few questions to gauge your current reputation risk level in minutes."
       },
       {
         "label": "Blog",
-        "to": "https://reputation.house/blog",
+        "to": "/blog",
         "description": "Practical guides and expert insights on managing digital reputation."
       }
     ]
   },
   {
     "label": "Company",
-    "to": "https://reputation.house/",
+    "to": "/",
     "items": [
       {
         "label": "About",
-        "to": "https://reputation.house/company",
+        "to": "/company",
         "description": "Who we are, what we stand for, and how we protect reputations."
       },
       {
         "label": "FAQ",
-        "to": "https://reputation.house/faq",
+        "to": "/faq",
         "description": "Answers to common questions about our services, process, and pricing."
       },
       {
         "label": "Team",
-        "to": "https://reputation.house/team",
+        "to": "/team",
         "description": "The specialists behind our monitoring, strategy, and crisis work."
       },
       {
         "label": "Contacts",
-        "to": "https://reputation.house/contacts",
+        "to": "/contacts",
         "description": "Reach our team for consultations, partnerships, or press inquiries."
       }
     ]

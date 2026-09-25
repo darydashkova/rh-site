@@ -1,0 +1,1 @@
+import{G as e,I as t,bt as n,nt as r,r as i}from"./XZ_OgtGg.js";import{n as a,t as o}from"./BWgSwwFT.js";var s=e({__name:`rh-detection`,setup(e){return i({title:`Brand Monitoring Tools & Risk Detection | Reputation House`,description:o.detection.description}),(e,i)=>{let s=a;return r(),t(s,{mode:n(o).detection},null,8,[`mode`])}}});export{s as default};

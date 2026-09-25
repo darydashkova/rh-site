@@ -9,7 +9,10 @@
     "postinstall": "nuxt prepare",
     "typecheck": "nuxt typecheck",
     "format": "prettier --write app nuxt.config.ts tsconfig.json package.json",
-    "format:check": "prettier --check app nuxt.config.ts tsconfig.json package.json"
+    "format:check": "prettier --check app nuxt.config.ts tsconfig.json package.json",
+    "build:pages": "node scripts/build-pages.mjs",
+    "verify:pages": "node scripts/verify-pages.mjs",
+    "preview:pages": "node scripts/preview-pages.mjs"
   },
   "dependencies": {
     "htmlparser2": "^10.1.0",

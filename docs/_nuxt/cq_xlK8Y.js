@@ -1,0 +1,1 @@
+import{G as e,I as t,bt as n,nt as r,r as i}from"./XZ_OgtGg.js";import{n as a,t as o}from"./BWgSwwFT.js";var s=e({__name:`rh-defence`,setup(e){return i({title:`RH Defence: Enterprise Crisis Management | Reputation House`,description:o.defence.description}),(e,i)=>{let s=a;return r(),t(s,{mode:n(o).defence},null,8,[`mode`])}}});export{s as default};

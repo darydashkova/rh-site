@@ -1,5 +1,4 @@
 const localPages = new Set([
-  "/digital-pr",
   "/online-presence-management",
   "/calculator/serp-reputation-score",
   "/calculator/executive-reputation-score",
@@ -82,6 +81,14 @@ const localPages = new Set([
 
 export function resolveSiteLink(href: string) {
   const value = href.trim();
+  const aliases: Record<string, string> = {
+    "/media-monitoring": "/rh-detection",
+    "/online-reputation-management": "/rh-control",
+    "/reputation-narrative-management": "/brand-reputation-services",
+  };
+  const candidate = value.replace(/^https:\/\/reputation\.house(?=\/)/, "");
+  const [aliasPath] = candidate.split(/[?#]/);
+  if (aliasPath && aliases[aliasPath]) return aliases[aliasPath] + candidate.slice(aliasPath.length);
   if (value === "/cases-hub" || value === "https://reputation.house/cases-hub")
     return "/case-studies";
   if (!value.startsWith("https://reputation.house")) return value;

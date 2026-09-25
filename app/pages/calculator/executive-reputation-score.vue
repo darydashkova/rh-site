@@ -416,13 +416,12 @@ useSeoMeta({
               response is eroding that value.</span
             >
             <div class="rh-cp-cross-ex-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/brand-monitoring-roi"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-ex-btn"
-                >Calculate monitoring ROI →</a
-              >
+                >Calculate monitoring ROI →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-ex-card b">
@@ -440,13 +439,12 @@ useSeoMeta({
               before damage hardens into a permanent SERP result.</span
             >
             <div class="rh-cp-cross-ex-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/crisis-response-time"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-ex-btn"
-                >Calculate response time →</a
-              >
+                >Calculate response time →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-ex-card c">
@@ -464,13 +462,12 @@ useSeoMeta({
               you, and where the gaps are.</span
             >
             <div class="rh-cp-cross-ex-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/serp-reputation-score"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-ex-btn"
-                >Check brand SERP score →</a
-              >
+                >Check brand SERP score →</SiteLink>
             </div>
           </div>
         </div>

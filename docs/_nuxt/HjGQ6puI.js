@@ -1,0 +1,1 @@
+import{G as e,I as t,nt as n}from"./XZ_OgtGg.js";import{t as r}from"./Q3agKjJt.js";import{t as i}from"./CNs_Ozdc.js";var a=e({__name:`personal-online-reputation`,setup(e){return i({alias:[`/digital-pr`]}),(e,i)=>{let a=r;return n(),t(a,{slug:`personal-online-reputation`})}}});export{a as default};

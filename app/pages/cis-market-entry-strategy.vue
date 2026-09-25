@@ -4566,9 +4566,9 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
         <div class="t-container">
           <div class="t-col t-col_12">
             <div class="t1331__row t1331__row_center">
-              <a class="t-btn t-btnflex t-btnflex_type_button t-btnflex_md" href="/case-studies"
+              <SiteLink class="t-btn t-btnflex t-btnflex_type_button t-btnflex_md" href="/case-studies"
                 ><span class="t-btnflex__text">See more industry anti-cases</span>
-              </a>
+              </SiteLink>
             </div>
           </div>
         </div>
@@ -4921,11 +4921,11 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                         Explore our other business solutions
                       </div>
                       <div class="t189__buttons-wrapper">
-                        <a
+                        <SiteLink
                           class="t-btn t-btnflex t-btnflex_type_button t-btnflex_md"
                           href="/reputation-services-for-companies"
                           ><span class="t-btnflex__text">Explore</span>
-                        </a>
+                        </SiteLink>
                       </div>
                     </div>
                   </div>
@@ -5152,11 +5152,11 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                         See how pricing breaks down by region and scope
                       </div>
                       <div class="t189__buttons-wrapper">
-                        <a
+                        <SiteLink
                           class="t-btn t-btnflex t-btnflex_type_button t-btnflex_md"
                           href="/reputation-management-pricing"
                           ><span class="t-btnflex__text">See pricing</span>
-                        </a>
+                        </SiteLink>
                       </div>
                     </div>
                   </div>
@@ -5373,7 +5373,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/online-reputation-management"
                       class="t-card__link"
                       id="cardtitle1_2913614001"
@@ -5383,7 +5383,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-weight: 400; color: rgb(96, 108, 89); font-size: 14px"
                         >RH Control · Full Platform</span
                       ><br /><br />Strategic Information-Field Management
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     Once the market is established, manage search, reviews, narrative and AI answers
@@ -5410,7 +5410,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/serm-services"
                       class="t-card__link"
                       id="cardtitle2_2913614001"
@@ -5420,7 +5420,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-size: 14px; color: rgb(96, 108, 89); font-weight: 400"
                         >RH Control · Influence</span
                       ><br /><br />Search Engine Reputation Management
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     For a footprint that already exists and needs ongoing search management, not a
@@ -5447,7 +5447,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/reputation-narrative-management"
                       class="t-card__link"
                       id="cardtitle3_2913614001"
@@ -5457,7 +5457,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-weight: 400; color: rgb(96, 108, 89); font-size: 14px"
                         >RH Control · Influence</span
                       ><br /><br />Brand Reputation &amp; Narrative Management
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     Ongoing narrative management once the new market has a footprint worth actively
@@ -5484,7 +5484,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/crisis-management-agency"
                       class="t-card__link"
                       id="cardtitle4_2913614001"
@@ -5494,7 +5494,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-size: 14px; color: rgb(96, 108, 89); font-weight: 400"
                         >RH Defence</span
                       ><br /><br />Crisis Management
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     If the entry has already triggered an active crisis, not ongoing build work —

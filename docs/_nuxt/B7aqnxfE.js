@@ -1,0 +1,1 @@
+import{G as e,I as t,bt as n,nt as r,r as i}from"./XZ_OgtGg.js";import{n as a,t as o}from"./BWgSwwFT.js";var s=e({__name:`rh-control`,setup(e){return i({title:`Enterprise Reputation Management Platform | RH Control`,description:o.control.description}),(e,i)=>{let s=a;return r(),t(s,{mode:n(o).control},null,8,[`mode`])}}});export{s as default};

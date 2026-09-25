@@ -415,13 +415,12 @@ useSeoMeta({
               your favour right now.</span
             >
             <div class="rh-cp-cross-serp-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-recovery-timeline"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-serp-btn"
-                >See the timeline →</a
-              >
+                >See the timeline →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-serp-card b">
@@ -439,13 +438,12 @@ useSeoMeta({
               are quietly eroding that value.</span
             >
             <div class="rh-cp-cross-serp-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/brand-monitoring-roi"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-serp-btn"
-                >Calculate monitoring ROI →</a
-              >
+                >Calculate monitoring ROI →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-serp-card c">
@@ -464,13 +462,12 @@ useSeoMeta({
               platform — before damage becomes difficult to reverse.</span
             >
             <div class="rh-cp-cross-serp-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/crisis-response-time"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-serp-btn"
-                >Calculate response time →</a
-              >
+                >Calculate response time →</SiteLink>
             </div>
           </div>
         </div>

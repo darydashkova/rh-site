@@ -1329,12 +1329,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="449"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/personal-online-reputation">
+                    <SiteLink class="tn-atom" href="/personal-online-reputation">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -1459,12 +1459,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="449"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/personal-reputation-monitoring">
+                    <SiteLink class="tn-atom" href="/personal-reputation-monitoring">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -1704,12 +1704,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="401"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/personal-reputation-building">
+                    <SiteLink class="tn-atom" href="/personal-reputation-building">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -1834,12 +1834,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="401"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/public-figure-reputation-management">
+                    <SiteLink class="tn-atom" href="/public-figure-reputation-management">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -2060,12 +2060,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="402"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/personal-reputation-repair">
+                    <SiteLink class="tn-atom" href="/personal-reputation-repair">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -2304,12 +2304,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                     data-field-top-res-960-value="474"
                     data-field-height-res-960-value="54"
                   >
-                    <a class="tn-atom" href="/personal-reputation-crisis">
+                    <SiteLink class="tn-atom" href="/personal-reputation-crisis">
                       <div class="tn-atom__button-content">
                         <span class="tn-atom__button-text">Learn More</span>
                       </div>
                       <span class="tn-atom__button-border"></span>
-                    </a>
+                    </SiteLink>
                   </div>
                 </div>
               </div>
@@ -2800,12 +2800,12 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 data-field-top-res-960-value="25"
                 data-field-height-res-960-value="54"
               >
-                <a class="tn-atom" href="/reputation-services-for-companies">
+                <SiteLink class="tn-atom" href="/reputation-services-for-companies">
                   <div class="tn-atom__button-content">
                     <span class="tn-atom__button-text">See Solutions For Companies</span>
                   </div>
                   <span class="tn-atom__button-border"></span>
-                </a>
+                </SiteLink>
               </div>
             </div>
           </div>

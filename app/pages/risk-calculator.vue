@@ -4,7 +4,7 @@ const articles = [
     title: "SERP Control Score: Do You Own Your Brand Search Results?",
     description:
       "Five inputs, one score out of 100 — see how much of your branded top-10 you actually control, what the gaps are exposing you to, and exactly what to fix first.",
-    href: "https://reputation.house/calculator/serp-reputation-score",
+    href: "/calculator/serp-reputation-score",
     image: "/images/resource-54f9d653b258.png",
     alt: "",
     date: "2026-07-08",
@@ -14,7 +14,7 @@ const articles = [
     title: "Executive Reputation Score: What Does Google Say About You?",
     description:
       "Five questions about your digital presence — personal site, LinkedIn, media coverage, negative results, and your role — and you get a score out of 100 with a risk map and what others actually find when they search your name.",
-    href: "https://reputation.house/calculator/executive-reputation-score",
+    href: "/calculator/executive-reputation-score",
     image: "/images/resource-9be9a31a2a38.png",
     alt: "",
     date: "2026-07-08",
@@ -24,7 +24,7 @@ const articles = [
     title: "Crisis Response Time Calculator",
     description:
       "Six crisis types, three spread speeds, four platforms — select your situation and get your critical response window, the point of no return, and the first three steps to take right now.",
-    href: "https://reputation.house/calculator/crisis-response-time",
+    href: "/calculator/crisis-response-time",
     image: "/images/resource-352c0237f7fc.png",
     alt: "",
     date: "2026-07-08",
@@ -34,7 +34,7 @@ const articles = [
     title: "Brand Monitoring ROI Calculator",
     description:
       "Enter your monthly mention volume, average reach, paid CPM, share of negative mentions, and response time — and see what your earned media is worth, and how much slow monitoring is quietly costing you.",
-    href: "https://reputation.house/calculator/brand-monitoring-roi",
+    href: "/calculator/brand-monitoring-roi",
     image: "/images/resource-0480f0d15362.png",
     alt: "",
     date: "2026-06-26",
@@ -44,7 +44,7 @@ const articles = [
     title:
       "Review Impact Calculator: See What Your Star Rating Is Actually Worth",
     description: "",
-    href: "https://reputation.house/calculator/review-impact-revenue",
+    href: "/calculator/review-impact-revenue",
     image: "/images/resource-bc16a1b47ac1.png",
     alt: "",
     date: "2026-06-23",
@@ -55,7 +55,7 @@ const articles = [
       "Reputation Recovery Timeline: How Long Until This Is Actually Behind You",
     description:
       "Incident type, how far it spread, whether it's still active, whether you have positive content, and company size — five quick inputs, one phase-by-phase timeline, no guesswork.",
-    href: "https://reputation.house/calculator/reputation-recovery-timeline",
+    href: "/calculator/reputation-recovery-timeline",
     image: "/images/resource-392f53578327.png",
     alt: "",
     date: "2026-06-18",
@@ -66,7 +66,7 @@ const articles = [
       "Reputation Damage Cost Estimator: See What an Incident Would Actually Cost You",
     description:
       "Put a number on the thing you're already worried about. Revenue, incident type, how far it spreads, whether you have a plan — four inputs, one range, no email wall.",
-    href: "https://reputation.house/calculator/reputation-damage-cost",
+    href: "/calculator/reputation-damage-cost",
     image: "/images/resource-cc63f2642bb7.png",
     alt: "",
     date: "2026-06-18",
@@ -77,7 +77,7 @@ const articles = [
       "Reputation Exposure Scan: Detect Hidden Vulnerabilities Before They Go Public",
     description:
       "Identify where your brand is exposed — across search, AI platforms, media, reviews, compliance databases, and crisis readiness. Built on WTW, Aon, and EY frameworks. Six surfaces. Twenty signals. One score.",
-    href: "https://reputation.house/calculator/reputation-risk-score",
+    href: "/calculator/reputation-risk-score",
     image: "/images/resource-ebd107718240.png",
     alt: "",
     date: "2026-06-18",

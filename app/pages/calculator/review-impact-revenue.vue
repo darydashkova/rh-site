@@ -387,13 +387,12 @@ useSeoMeta({
               surfaces and twenty signals at once.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-risk-score"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >Run the risk score →</a
-              >
+                >Run the risk score →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-card b">
@@ -410,13 +409,12 @@ useSeoMeta({
               attack — this estimator puts a dollar range on that instead.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-damage-cost"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >Estimate the cost →</a
-              >
+                >Estimate the cost →</SiteLink>
             </div>
           </div>
         </div>

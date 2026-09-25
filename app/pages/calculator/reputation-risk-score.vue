@@ -179,13 +179,12 @@ useSeoMeta({
           search, AI, media and social, reviews, compliance databases, and
           crisis infrastructure. These are the same surfaces covered by
           Reputation House's
-          <a
+          <SiteLink
             href="/risk-control-center"
             target="_blank"
             rel="noopener"
             style="color: #99ad8f; font-weight: 600; text-decoration: underline"
-            >Risk Control Center</a
-          >
+            >Risk Control Center</SiteLink>
           in its real-time monitoring platform.</span
         >
         <div class="rh-cp-dims-grid">
@@ -372,7 +371,7 @@ useSeoMeta({
               services with shallow coverage to enterprise integrated detection
               platforms that cover all digital surfaces with analyst
               interpretation. The
-              <a
+              <SiteLink
                 href="/risk-control-center"
                 target="_blank"
                 rel="noopener"
@@ -381,8 +380,7 @@ useSeoMeta({
                   font-weight: 600;
                   text-decoration: underline;
                 "
-                >Reputation House Risk Control Center</a
-              >
+                >Reputation House Risk Control Center</SiteLink>
               covers all six surfaces in real time with interpreted risk
               signals.</span
             >
@@ -398,7 +396,7 @@ useSeoMeta({
               volume will drop 25% by 2026 as AI answers take share. A brand
               that appears inaccurately or not at all in AI responses has a
               structural blind spot that grows with AI adoption. The
-              <a
+              <SiteLink
                 href="/ai-influence-services"
                 target="_blank"
                 rel="noopener"
@@ -407,8 +405,7 @@ useSeoMeta({
                   font-weight: 600;
                   text-decoration: underline;
                 "
-                >AI influence audit</a
-              >
+                >AI influence audit</SiteLink>
               tracks and corrects how assistants describe a brand as their
               sources change.</span
             >

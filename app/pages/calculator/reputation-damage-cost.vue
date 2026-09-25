@@ -382,7 +382,7 @@ useSeoMeta({
               reputation remediation work after the fact — based on
               industry-standard estimates for SERM and crisis-communications
               campaigns. For a tailored remediation plan, the
-              <a
+              <SiteLink
                 href="/risk-control-center"
                 target="_blank"
                 rel="noopener"
@@ -391,8 +391,7 @@ useSeoMeta({
                   font-weight: 600;
                   text-decoration: underline;
                 "
-                >Reputation House Risk Control Center</a
-              >
+                >Reputation House Risk Control Center</SiteLink>
               covers this end to end.</span
             >
           </details>
@@ -425,13 +424,12 @@ useSeoMeta({
               signals, before anything happens.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-risk-score"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >Run the risk score →</a
-              >
+                >Run the risk score →</SiteLink>
             </div>
           </div>
         </div>

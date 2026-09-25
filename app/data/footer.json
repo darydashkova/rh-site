@@ -5,67 +5,67 @@
       "links": [
         {
           "label": "Reputation Monitoring",
-          "href": "https://reputation.house/online-reputation-monitoring"
+          "href": "/online-reputation-monitoring"
         },
         {
           "label": "Social Listening",
-          "href": "https://reputation.house/social-listening"
+          "href": "/social-listening"
         },
         {
           "label": "Brand InsightBrand Audit / Brand Insight",
-          "href": "https://reputation.house/brand-audit"
+          "href": "/brand-audit"
         },
         {
           "label": "AI Brand Monitoring",
-          "href": "https://reputation.house/ai-brand-monitoring"
+          "href": "/ai-brand-monitoring"
         },
         {
           "label": "Digital Risk Protection",
-          "href": "https://reputation.house/digital-risk-protection"
+          "href": "/digital-risk-protection"
         },
         {
           "label": "Brand Reputation Management",
-          "href": "https://reputation.house/brand-reputation-services"
+          "href": "/brand-reputation-services"
         },
         {
           "label": "SERM (Search Engine Reputation)",
-          "href": "https://reputation.house/serm-services"
+          "href": "/serm-services"
         },
         {
           "label": "Online Review Management",
-          "href": "https://reputation.house/online-review-management"
+          "href": "/online-review-management"
         },
         {
           "label": "AI Reputation Management",
-          "href": "https://reputation.house/ai-influence-services"
+          "href": "/ai-influence-services"
         },
         {
           "label": "Brand Positioning Management",
-          "href": "https://reputation.house/brand-positioning-services"
+          "href": "/brand-positioning-services"
         },
         {
           "label": "Brand Launch Strategy / Market Entry",
-          "href": "https://reputation.house/brand-launch-strategy"
+          "href": "/brand-launch-strategy"
         },
         {
           "label": "Employer Branding",
-          "href": "https://reputation.house/employer-reputation-management"
+          "href": "/employer-reputation-management"
         },
         {
           "label": "Business Media Presence",
-          "href": "https://reputation.house/business-media-presence"
+          "href": "/business-media-presence"
         },
         {
           "label": "Crisis Management",
-          "href": "https://reputation.house/crisis-management-agency"
+          "href": "/crisis-management-agency"
         },
         {
           "label": "Remove Negative Content",
-          "href": "https://reputation.house/online-reputation-repair"
+          "href": "/online-reputation-repair"
         },
         {
           "label": "Brand Protection",
-          "href": "https://reputation.house/brand-protection-services"
+          "href": "/brand-protection-services"
         }
       ]
     },
@@ -74,27 +74,27 @@
       "links": [
         {
           "label": "Personal Reputation Management",
-          "href": "https://reputation.house/personal-online-reputation"
+          "href": "/personal-online-reputation"
         },
         {
           "label": "Personal Monitoring",
-          "href": "https://reputation.house/personal-reputation-monitoring"
+          "href": "/personal-reputation-monitoring"
         },
         {
           "label": "Personal Reputation Building",
-          "href": "https://reputation.house/personal-reputation-building"
+          "href": "/personal-reputation-building"
         },
         {
           "label": "Public-Figure Reputation Management",
-          "href": "https://reputation.house/public-figure-reputation-management"
+          "href": "/public-figure-reputation-management"
         },
         {
           "label": "Personal Reputation Repair",
-          "href": "https://reputation.house/personal-reputation-repair"
+          "href": "/personal-reputation-repair"
         },
         {
           "label": "Personal Crisis Response",
-          "href": "https://reputation.house/personal-reputation-crisis"
+          "href": "/personal-reputation-crisis"
         }
       ]
     },
@@ -103,23 +103,23 @@
       "links": [
         {
           "label": "Remove Negative Content",
-          "href": "https://reputation.house/remove-negative-content"
+          "href": "/remove-negative-content"
         },
         {
           "label": "Reputation Audit",
-          "href": "https://reputation.house/reputation-audit"
+          "href": "/reputation-audit"
         },
         {
           "label": "CIS Market Entry",
-          "href": "https://reputation.house/cis-market-entry-strategy"
+          "href": "/cis-market-entry-strategy"
         },
         {
           "label": "China Market Entry",
-          "href": "https://reputation.house/china-market-entry-strategy"
+          "href": "/china-market-entry-strategy"
         },
         {
           "label": "AI-Powered Risk Protection",
-          "href": "https://reputation.house/ai-digital-reputation-protection"
+          "href": "/ai-digital-reputation-protection"
         }
       ]
     },
@@ -132,19 +132,19 @@
         },
         {
           "label": "RH Detection",
-          "href": "https://reputation.house/rh-detection"
+          "href": "/rh-detection"
         },
         {
           "label": "RH Control",
-          "href": "https://reputation.house/rh-control"
+          "href": "/rh-control"
         },
         {
           "label": "RH Defence",
-          "href": "https://reputation.house/rh-defence"
+          "href": "/rh-defence"
         },
         {
           "label": "RH Personal",
-          "href": "https://reputation.house/rh-personal"
+          "href": "/rh-personal"
         }
       ]
     },
@@ -153,19 +153,19 @@
       "links": [
         {
           "label": "About",
-          "href": "https://reputation.house/company"
+          "href": "/company"
         },
         {
           "label": "Team",
-          "href": "https://reputation.house/team"
+          "href": "/team"
         },
         {
           "label": "FAQs",
-          "href": "https://reputation.house/faq"
+          "href": "/faq"
         },
         {
           "label": "Pricing",
-          "href": "https://reputation.house/reputation-management-pricing"
+          "href": "/reputation-management-pricing"
         }
       ]
     },
@@ -174,19 +174,19 @@
       "links": [
         {
           "label": "Case Studies",
-          "href": "https://reputation.house/case-studies"
+          "href": "/case-studies"
         },
         {
           "label": "News",
-          "href": "https://reputation.house/news"
+          "href": "/news"
         },
         {
           "label": "Blog",
-          "href": "https://reputation.house/blog"
+          "href": "/blog"
         },
         {
           "label": "Risk Calculator",
-          "href": "https://reputation.house/risk-calculator"
+          "href": "/risk-calculator"
         },
         {
           "label": "Research Center",
@@ -227,15 +227,15 @@
   "legal": [
     {
       "label": "Privacy Policy",
-      "href": "https://reputation.house/privacy-policy"
+      "href": "/privacy-policy"
     },
     {
       "label": "Sitemap",
-      "href": "https://reputation.house/sitemap_html"
+      "href": "/sitemap_html"
     },
     {
       "label": "Cookies Policy",
-      "href": "https://reputation.house/cookies-policy"
+      "href": "/cookies-policy"
     }
   ]
 }

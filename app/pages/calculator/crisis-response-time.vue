@@ -419,13 +419,12 @@ useSeoMeta({
               data across five incident types.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-damage-cost"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >Estimate the damage →</a
-              >
+                >Estimate the damage →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-card b">
@@ -443,13 +442,12 @@ useSeoMeta({
               a plan was in place.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-recovery-timeline"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >See the recovery timeline →</a
-              >
+                >See the recovery timeline →</SiteLink>
             </div>
           </div>
           <div class="rh-cp-cross-card c">
@@ -467,13 +465,12 @@ useSeoMeta({
               exposure actually is.</span
             >
             <div class="rh-cp-cross-btn-row">
-              <a
+              <SiteLink
                 href="/calculator/reputation-risk-score"
                 target="_blank"
                 rel="noopener"
                 class="rh-cp-cross-btn"
-                >Run the risk score →</a
-              >
+                >Run the risk score →</SiteLink>
             </div>
           </div>
         </div>

@@ -10,11 +10,16 @@ export default defineComponent({
   setup(props) {
     const content = computed(() => parseFormattedText(props.text));
     const consultation = useConsultation();
+    const router = useRouter();
+    const resolveHref = (href: string) => {
+      const destination = resolveSiteLink(href);
+      return /^\/(?!\/)/.test(destination) ? router.resolve(destination).href : destination;
+    };
     return () =>
       h(
         "div",
         { class: "service-copy" },
-        renderFormattedText(content.value, resolveSiteLink, consultation.open),
+        renderFormattedText(content.value, resolveHref, consultation.open),
       );
   },
 });

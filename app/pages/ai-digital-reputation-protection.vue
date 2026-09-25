@@ -1558,14 +1558,14 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 </div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/risk-control-center"
                       class="t-card__link"
                       id="cardtitle2_2984636201"
                       aria-labelledby="cardtitle2_2984636201 cardbtn2_2984636201"
                     >
                       Risk Control Center
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     Our proprietary platform — real-time monitoring of all five elements, alerts
@@ -1608,14 +1608,14 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 </div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/team"
                       class="t-card__link"
                       id="cardtitle3_2984636201"
                       aria-labelledby="cardtitle3_2984636201 cardbtn3_2984636201"
                     >
                       Expert Teams
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     Specialists who interpret the platform's data and act — strategy, search
@@ -1762,7 +1762,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/brand-reputation-services"
                       class="t-card__link"
                       id="cardtitle2_2984737701"
@@ -1771,7 +1771,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-weight: 400; color: rgb(96, 108, 89); font-size: 14px"
                         >RH Control</span
                       ><br /><br />Strategic Information-Field Management
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     Make sure the market reads your brand the way the business requires.
@@ -1797,7 +1797,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                 <div class="t858__wrap_top"></div>
                 <div class="t858__wrap_bottom">
                   <div class="t-card__title t-name t-name_lg t858__bottommargin">
-                    <a
+                    <SiteLink
                       href="/crisis-management-agency"
                       class="t-card__link"
                       id="cardtitle3_2984737701"
@@ -1806,7 +1806,7 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
                       <span style="font-size: 14px; color: rgb(162, 103, 100); font-weight: 400"
                         >RH Defence</span
                       ><br /><br />Crisis management &amp; Repair
-                    </a>
+                    </SiteLink>
                   </div>
                   <div class="t-card__descr t-descr t-descr_sm">
                     A priority team, counter-narrative and 24/7 monitoring when a threat is active

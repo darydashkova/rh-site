@@ -250,13 +250,13 @@ useSeoMeta({ title: metadata.title, description: metadata.description });
               <ul class="t758__list">
                 <li class="t758__list_item">
                   <div class="t758__link-item__wrapper">
-                    <a class="t-menu__link-item" href="/"> Main page </a>
+                    <SiteLink class="t-menu__link-item" href="/"> Main page </SiteLink>
                   </div>
                   <span class="t758__breadcrumb-divider">/</span>
                 </li>
                 <li class="t758__list_item">
                   <div class="t758__link-item__wrapper">
-                    <a class="t-menu__link-item" href="/solutions">Solutions of RH</a>
+                    <SiteLink class="t-menu__link-item" href="/solutions">Solutions of RH</SiteLink>
                   </div>
                   <span class="t758__breadcrumb-divider">/</span>
                 </li>
