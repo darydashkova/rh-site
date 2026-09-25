@@ -5,7 +5,11 @@
       "label": "Guided Match",
       "title": "Know something needs fixing, not sure what?",
       "description": "Answer 4 quick questions about your situation, even if you're not sure whether it's a company issue or a personal one, and we'll match you to the right solution or strategy.",
-      "tags": ["1 minute", "Free", "4 questions"],
+      "tags": [
+        "1 minute",
+        "Free",
+        "4 questions"
+      ],
       "action": "Try Online Helper",
       "href": "https://strategy.reputation.house/strategy/"
     },
@@ -13,7 +17,11 @@
       "label": "Free online Diagnostic",
       "title": "Not sure if anything's wrong?",
       "description": "Run a free online audit of your digital profile across search, mentions, AI answers, reviews and narrative — see exactly where you stand before deciding what to do next.",
-      "tags": ["3 minutes", "Free", "no commitment"],
+      "tags": [
+        "3 minutes",
+        "Free",
+        "no commitment"
+      ],
       "action": "Start a free Risk Check",
       "href": "https://checkmyrisks.com/?utm_source=reputation_house&utm_medium=referral&utm_campaign=homepage&utm_content=not_sure_diagnostic"
     }
@@ -56,7 +64,9 @@
           "description": "One-time analytical map of the information field: HR, corporate, product, competitors — as a basis for risk.",
           "href": "https://reputation.house/brand-audit"
         }
-      ]
+      ],
+      "icon": "/images/service-832a1dd24f.svg",
+      "categoryDescription": "See a risk across your information field before it goes public"
     },
     {
       "id": "control",
@@ -113,7 +123,9 @@
           "description": "Risk-driven presence in business and industry media as profile integrity, not vanity PR.",
           "href": "https://reputation.house/business-media-presence"
         }
-      ]
+      ],
+      "icon": "/images/service-c6d6ed19ea.svg",
+      "categoryDescription": "manage search, reviews, narrative and AI answers on an ongoing basis"
     },
     {
       "id": "defence",
@@ -132,7 +144,7 @@
           "program": "RH Defence",
           "title": "Brand Protection",
           "description": "Keep brigading, brandjacking and fake reviews from becoming your brand crisis.",
-          "href": "https://reputation.house/brand-protection-solution"
+          "href": "/brand-protection-services"
         },
         {
           "program": "RH Defence",
@@ -140,7 +152,9 @@
           "description": "Repair and suppress damaging content under active pressure.",
           "href": "https://reputation.house/online-reputation-repair"
         }
-      ]
+      ],
+      "icon": "/images/service-3da06aeb5f.svg",
+      "categoryDescription": "contain an active crisis or coordinated attack, 24/7"
     },
     {
       "id": "protect",

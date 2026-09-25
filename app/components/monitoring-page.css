@@ -1,0 +1,812 @@
+/* Layout measured against the monitoring page; other service pages keep their own styles. */
+.service-page--online-reputation-monitoring {
+  color: #262626;
+}
+.service-page--online-reputation-monitoring .service-copy {
+  line-height: 1.2;
+}
+.service-page--online-reputation-monitoring .service-eyebrow {
+  color: #585858;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+.service-page--online-reputation-monitoring .service-section__heading {
+  padding-top: 18px;
+}
+.service-page--online-reputation-monitoring .service-section__heading > h2 {
+  line-height: 1.2;
+  max-width: 862px;
+}
+.service-page--online-reputation-monitoring .service-hero {
+  padding-bottom: 45px;
+}
+.service-page--online-reputation-monitoring .service-hero h1 {
+  max-width: 600px;
+  line-height: 67px;
+}
+.service-page--online-reputation-monitoring
+  .service-hero__copy
+  > .service-copy {
+  line-height: 28px;
+  color: #464646;
+}
+.service-page--online-reputation-monitoring .service-coverage {
+  border-width: 1px;
+  border-radius: 20px;
+}
+.service-page--online-reputation-monitoring .service-coverage .service-copy {
+  line-height: 24px;
+}
+.service-page--online-reputation-monitoring .service-card h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-signals
+  .service-card {
+  min-height: 288px;
+  gap: 16px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-signals
+  .service-card
+  h3 {
+  min-height: 40px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-signals
+  .service-card__icon {
+  margin-bottom: 20px;
+}
+.service-page--online-reputation-monitoring .service-section__heading--split {
+  grid-template-columns: minmax(0, 550fr) minmax(0, 544fr);
+  column-gap: 66px;
+}
+.service-page--online-reputation-monitoring
+  .service-section__heading--split
+  > h2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.service-page--online-reputation-monitoring
+  .service-section__heading--split
+  > .service-section__description {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 32px;
+}
+.service-page--online-reputation-monitoring .service-section__aside {
+  grid-column: 2;
+  grid-row: 2 / 4;
+  align-self: stretch;
+  margin-top: 40px;
+  padding: 32px;
+  gap: 32px;
+  border-left-width: 3px;
+  border-radius: 0 16px 16px 0;
+  background:
+    linear-gradient(#ddecd7dd, #ddecd7dd),
+    url("/images/pattern-spiral.svg") no-repeat right bottom / 500px,
+    #ddecd7;
+}
+.service-page--social-listening .service-section__aside {
+  background:
+    linear-gradient(#ddecd7dd, #ddecd7dd),
+    url("/images/pattern-spiral.svg") no-repeat right bottom / 500px,
+    #ddecd7;
+}
+.service-page--social-listening .service-cards--process .service-card {
+  color: #30362d;
+}
+.service-page--social-listening .service-cards--process .service-card h3 {
+  color: #30362d;
+}
+.service-page--social-listening .service-cards--process .service-card__number {
+  color: #30362d;
+  opacity: 0.7;
+}
+.service-page--online-reputation-monitoring
+  .service-section__aside
+  > .service-copy:last-child:not(:first-child) {
+  font-size: 14px;
+  line-height: 22px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-card {
+  min-height: 296px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-card
+  h3,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-platform
+  .service-platform__card
+  h3,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card
+  h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #464646;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-card
+  h3 {
+  min-height: 56px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-copy,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-platform
+  .service-copy,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card__bullet {
+  line-height: 24px;
+  color: #464646;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-callout {
+  margin-top: 40px;
+  padding: 24px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-callout
+  h3 {
+  font-size: 20px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-features
+  .service-callout
+  .service-copy {
+  line-height: 1.2;
+  color: #e6e6e6;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-comparison
+  .service-section__heading
+  h2,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-support
+  .service-section__heading
+  h2,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-comparison
+  .service-section__description,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-support
+  .service-section__description {
+  max-width: 720px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-comparison
+  .service-comparison,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-support
+  .service-comparison {
+  margin-top: 140px;
+  border-radius: 20px;
+}
+.service-page--online-reputation-monitoring .service-comparison td,
+.service-page--online-reputation-monitoring .service-comparison th {
+  padding: 16px;
+  line-height: 1.2;
+}
+.service-page--online-reputation-monitoring
+  .service-comparison
+  thead
+  th:last-child {
+  background: #bfd8b3;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-support
+  .service-comparison {
+  margin-top: 106px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-support
+  .service-comparison
+  th:first-child {
+  width: 25%;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card {
+  background: #fff;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  padding: 24px;
+  gap: 12px;
+  min-height: 580px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card
+  h3 {
+  color: #262626;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card__bullet {
+  padding-left: 35px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card__bullet::before {
+  content: "";
+  top: 8px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #a7bc99;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card__quote {
+  padding: 20px;
+  border-radius: 16px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-roles
+  .service-card__quote
+  .service-copy {
+  line-height: 1.2;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-platform-heading
+  .service-section__description,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-heading
+  .service-section__description {
+  max-width: 620px;
+  margin-top: 100px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-platform
+  .service-platform__screen {
+  object-fit: contain;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-platform
+  .service-platform__card {
+  gap: 24px;
+}
+.service-page--online-reputation-monitoring .carousel--bleed {
+  width: calc(100% + max(32px, (100vw - 1160px) / 2));
+  --carousel-gutter: 0px !important;
+}
+.service-page--online-reputation-monitoring .carousel--bleed .carousel__track {
+  align-items: stretch;
+  padding-inline: 0 !important;
+  scroll-padding-inline: 0 !important;
+}
+.service-page--online-reputation-monitoring
+  .carousel--bleed
+  .carousel__controls
+  button:first-child {
+  left: calc(48px - max(32px, (100vw - 1160px) / 2)) !important;
+}
+.service-page--online-reputation-monitoring
+  .carousel--bleed
+  .carousel__controls
+  button:last-child {
+  right: 40px !important;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-ai-gallery
+  .carousel__track {
+  gap: 40px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-ai-gallery
+  .service-card__icon {
+  height: 295px;
+  aspect-ratio: auto;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-ai-gallery
+  .service-card
+  h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-ai-gallery
+  .service-card {
+  gap: 16px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--cases
+  .service-card {
+  padding: 24px;
+  border: 0;
+  gap: 16px;
+}
+.service-page--online-reputation-monitoring .service-cards--cases h3 {
+  font-size: 19px;
+  font-weight: 700;
+  min-height: 28px;
+}
+.service-page--online-reputation-monitoring .service-card__before,
+.service-page--online-reputation-monitoring .service-card__after {
+  padding: 12px;
+  border-radius: 12px;
+}
+.service-page--online-reputation-monitoring .service-card__after {
+  flex: 1;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--cases
+  .service-card__eyebrow {
+  order: -2;
+  color: #585858;
+  font-size: 14px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--cases
+  .service-card__icon {
+  order: -1;
+  width: 140px;
+  height: 48px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-client-cases
+  .service-card {
+  min-height: 892px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-client-cases
+  .service-card
+  > .service-copy:not(.service-card__source) {
+  min-height: 56px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--cases
+  .service-card__source {
+  background: none;
+  padding: 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.service-page--online-reputation-monitoring .service-card__source a {
+  color: inherit;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-client-cases
+  .service-card__before {
+  min-height: 232px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-client-cases
+  .service-card__after {
+  min-height: 249px;
+  flex: 0 0 auto;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-cases
+  .service-card {
+  padding: 20px;
+  border: 1px solid #d2d2d2;
+  border-radius: 22px;
+  min-height: 679px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-cases
+  .service-card__eyebrow {
+  align-self: flex-start;
+  width: auto;
+  padding: 5px 13px;
+  border-radius: 999px;
+  background: #e5e5e5;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: none;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-cases
+  .service-card__icon {
+  width: 110px;
+  height: 32px;
+  margin-bottom: 0;
+  object-fit: contain;
+  object-position: left center;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-cases
+  .service-card__before {
+  min-height: 232px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-cases
+  .service-card__after {
+  min-height: 249px;
+  flex: 0 0 auto;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-link
+  .service-actions,
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-risk-link
+  .service-actions {
+  justify-content: center;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  > .container {
+  padding: 24px 32px;
+  border-radius: 20px;
+  background: #262626;
+  color: #e6e6e6;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .service-section__heading
+  h2 {
+  color: #e6e6e6;
+  font-size: 16px;
+  font-weight: 400;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .service-section__description {
+  max-width: 820px;
+  margin-top: 12px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request {
+  padding: 0;
+  margin-top: 16px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request
+  label {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request
+  input {
+  padding-block: 8px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request
+  button {
+  padding-block: 8px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request
+  form
+  > p {
+  display: none;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-case-form
+  .quick-request__fields {
+  margin-top: 0;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-limits
+  .service-card {
+  min-height: 305px;
+  border: 1px solid #ddd;
+  background: white;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-limits
+  .service-card:before {
+  content: "×";
+  color: #ba8b8b;
+  font-size: 28px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-limits
+  .service-card
+  h3 {
+  min-height: 38px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  > .container {
+  padding: 24px 32px;
+  background: #262626;
+  color: #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  .service-section__heading {
+  padding: 0;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  .service-section__heading
+  h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #e6e6e6;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  .service-section__description {
+  margin-top: 12px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  .service-actions {
+  margin: 0;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-explore
+  .action-button {
+  background: transparent;
+  border: 1px solid #aaa;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-investment
+  .service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  min-height: 308px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-investment
+  .service-card:nth-child(1),
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-investment
+  .service-card:nth-child(4) {
+  background: #606c59;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-investment
+  .service-card__icon {
+  margin-bottom: 4px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-pricing-link
+  .service-section__prose {
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+}
+.service-page--online-reputation-monitoring .monitoring-audit {
+  min-height: 668px;
+  padding: 120px 0 !important;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-audit
+  .container {
+  max-width: 800px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-audit
+  .service-section__heading {
+  padding: 0;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-audit
+  .service-section__heading
+  h2 {
+  font-size: 24px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-audit
+  .service-section__description
+  > .service-copy
+  + .service-copy {
+  margin-top: 60px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-audit
+  .service-actions {
+  margin-top: 60px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-related
+  .service-card {
+  background: white;
+  border: 1px solid #ddd;
+  min-height: 313px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-related
+  .service-card
+  h3 {
+  min-height: 38px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-faq
+  .question
+  button {
+  min-height: 77px;
+  padding: 15px 0;
+  font-size: 18px;
+}
+.service-page.service-page--online-reputation-monitoring
+  .monitoring-faq
+  .question__answer {
+  line-height: 1.5;
+}
+@media (min-width: 1001px) {
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-signals-heading {
+    min-height: 173px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-visibility {
+    min-height: 458px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-features {
+    min-height: 604px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-comparison {
+    min-height: 947px;
+  }
+  .service-page.service-page--online-reputation-monitoring .monitoring-roles {
+    min-height: 844px;
+  }
+  .service-page.service-page--online-reputation-monitoring .monitoring-process {
+    min-height: 982px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-platform-heading {
+    min-height: 426px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-ai-heading {
+    min-height: 440px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-ai-gallery {
+    min-height: 578px;
+  }
+  .service-page.service-page--online-reputation-monitoring .monitoring-support {
+    min-height: 810px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-cases-heading {
+    min-height: 172px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-case-form {
+    min-height: 311px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-risk-heading {
+    min-height: 398px;
+  }
+  .service-page.service-page--online-reputation-monitoring .monitoring-limits {
+    min-height: 654px;
+  }
+  .service-page.service-page--online-reputation-monitoring .monitoring-related {
+    min-height: 623px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-process
+    .service-section__heading {
+    margin-bottom: 125px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-process
+    .service-cards {
+    margin-top: 40px !important;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-limits
+    .service-section__heading
+    + .service-cards {
+    margin-top: 87px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-related
+    .service-section__heading
+    + .service-cards {
+    margin-top: 78px;
+  }
+}
+@media (max-width: 1000px) {
+  .service-page--online-reputation-monitoring .service-section__heading--split {
+    display: block;
+  }
+  .service-page--online-reputation-monitoring .service-section__aside {
+    margin-top: 30px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-comparison
+    .service-comparison,
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-support
+    .service-comparison,
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-platform-heading
+    .service-section__description,
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-risk-heading
+    .service-section__description {
+    margin-top: 32px;
+  }
+  .service-page--online-reputation-monitoring .service-hero h1 {
+    line-height: 1.2;
+  }
+  .service-page--online-reputation-monitoring .carousel--bleed {
+    width: 100%;
+  }
+  .service-page--online-reputation-monitoring
+    .carousel--bleed
+    .carousel__controls
+    button {
+    position: static;
+    transform: none;
+  }
+  .service-page--online-reputation-monitoring
+    .carousel--bleed
+    .carousel__controls {
+    display: flex;
+    margin-top: 20px;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-limits
+    .service-card,
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-investment
+    .service-card,
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-roles
+    .service-card {
+    min-height: 0;
+  }
+}
+@media (max-width: 600px) {
+  .service-page--online-reputation-monitoring
+    .service-hero__copy
+    > .service-copy {
+    line-height: 1.4;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-explore
+    > .container {
+    flex-direction: column;
+    align-items: start;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-case-form
+    > .container {
+    width: calc(100% - 40px);
+    padding: 24px;
+  }
+  .service-page--online-reputation-monitoring .monitoring-audit {
+    padding: 60px 0 !important;
+    min-height: 0;
+  }
+  .service-page.service-page--online-reputation-monitoring
+    .monitoring-ai-gallery
+    .service-card__icon {
+    height: auto;
+  }
+}

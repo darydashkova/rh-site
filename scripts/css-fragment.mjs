@@ -1,0 +1,1 @@
+import fs from'node:fs';const [slug,id,ext='css']=process.argv.slice(2),s=fs.readFileSync(`scripts/reference/${slug}.${ext}`,'utf8');let n=s.indexOf(id);console.log(s.slice(Math.max(0,n-100),n+2500));

@@ -12,22 +12,44 @@ useSeoMeta({
 });
 function sectionStyle(section: ServiceSection) {
   return {
+    "--section-top": `${section.paddingTop}px`,
+    "--section-bottom": `${section.paddingBottom}px`,
+    "--split-copy-width": section.copyWidth
+      ? `${section.copyWidth}px`
+      : undefined,
+    "--aside-height": section.asideHeight
+      ? `${section.asideHeight}px`
+      : undefined,
     backgroundColor: section.background,
+    "--aside-image": section.asideImage ? `url('${section.asideImage}')` : undefined,
+    "--cover-height": section.coverHeight,
+    "--section-pattern": section.patternImage ? `url('${section.patternImage}')` : undefined,
     paddingTop: `${section.paddingTop}px`,
     paddingBottom: `${section.paddingBottom}px`,
   };
 }
 </script>
 <template>
-  <main id="main-content" class="service-page" :class="`service-page--${slug}`">
+  <main
+    id="main-content"
+    class="service-page"
+    :class="[
+      `service-page--${slug}`,
+      { 'control-service': page.variant === 'control' },
+      { 'new-service': page.newService, 'defence-service': page.theme === 'defence' },
+    ]"
+  >
     <section
       class="service-hero"
       :style="{
         backgroundColor: page.hero.background,
+        '--hero-title-width': page.hero.titleWidth ? `${page.hero.titleWidth}px` : undefined,
+        '--hero-body-width': page.hero.bodyWidth ? `${page.hero.bodyWidth}px` : undefined,
         '--hero-pattern': page.hero.pattern
           ? `url('${page.hero.pattern}')`
           : undefined,
       }"
+      :class="{ 'service-hero--compact': page.hero.compact }"
     >
       <div class="container service-hero__layout">
         <div class="service-hero__copy">
@@ -38,17 +60,62 @@ function sectionStyle(section: ServiceSection) {
             :key="part"
             :html="part"
           />
-          <button class="action-button" @click="consultation.open()">
+          <button
+            v-if="!page.hero.form"
+            class="action-button"
+            @click="consultation.open()"
+          >
             {{ page.hero.action }}
           </button>
           <small>{{ page.hero.note }}</small>
-          <div v-if="page.hero.logos.length" class="service-hero__logos">
+          <div
+            v-if="page.hero.logos.length && !page.hero.reviewScale"
+            class="service-hero__logos"
+          >
+            <p
+              v-if="slug === 'ai-influence-services'"
+              class="service-hero__logos-caption"
+            >
+              Covered across
+            </p>
             <img
               v-for="logo in page.hero.logos"
               :key="logo.src"
               :src="logo.src"
               :alt="logo.alt"
             />
+          </div>
+        </div>
+        <div
+          v-if="page.hero.reviewScale"
+          class="review-orbit"
+          aria-label="Review platforms: Google, G2, Trustpilot, Clutch and Glassdoor"
+        >
+          <div class="review-orbit__summary">
+            <h2>A typical unmanaged review mix</h2>
+            <img
+              :src="page.hero.reviewScale"
+              alt="Illustrative mix of positive, neutral and negative reviews"
+            />
+            <p>
+              Illustrative example, not a client dataset. Your program starts
+              with a real audit of your own online reviews and their sentiment
+              mix.
+            </p>
+          </div>
+          <div
+            v-for="logo in page.hero.logos"
+            :key="logo.src"
+            class="review-orbit__platform"
+            :class="`review-orbit__platform--${logo.alt}`"
+          >
+            <img :src="logo.src" alt="" /><span v-if="logo.alt === 'google'"
+              >Google<br />Reviews</span
+            ><span v-else>{{ logo.alt }}</span>
+          </div>
+          <div class="review-orbit__platform review-orbit__platform--industry">
+            <span aria-hidden="true" class="review-orbit__plus">+</span
+            >Industry-<br />specific
           </div>
         </div>
         <aside v-if="page.hero.coverage.length" class="service-coverage">
@@ -63,27 +130,64 @@ function sectionStyle(section: ServiceSection) {
           </ul>
         </aside>
       </div>
+      <div v-if="page.hero.form" class="container serm-hero-form">
+        <h2>Get Your Free SERM Audit</h2>
+        <p>
+          We'll analyze what Google currently shows about your brand and send
+          you a custom strategy within 3 business days. Fully confidential.
+        </p>
+        <QuickRequestForm button-label="Submit" />
+      </div>
+      <nav
+        v-if="page.hero.form"
+        class="container serm-breadcrumb"
+        aria-label="Breadcrumb"
+      >
+        <SiteLink href="/">Main page</SiteLink><span>/</span
+        ><SiteLink href="/solutions">Solutions for companies</SiteLink
+        ><span>/</span><span>Search engine reputation management (SERM)</span>
+      </nav>
     </section>
     <section
       v-for="(section, index) in page.sections"
       :key="index"
       class="service-section"
+      :data-reference-id="section.referenceId"
+      :data-section-index="index"
       :class="[
         `service-section--${section.kind}`,
+        section.layout ? `monitoring-${section.layout}` : undefined,
         { 'service-section--dark': section.background === '#262626' },
+        { 'service-section--cover': section.coverHeight },
+        { 'service-section--standard-cards': section.standardCards },
+        { 'service-section--editorial': section.editorialBody },
+        { 'service-section--full-split-title': section.splitTitleFull },
+        { 'service-section--stacked-headings': section.stackedHeadings },
       ]"
       :style="sectionStyle(section)"
     >
       <div class="container">
         <header
-          v-if="section.eyebrow || section.title"
+          v-if="section.eyebrow || section.title || section.aside?.length"
           class="service-section__heading"
           :class="{ 'service-section__heading--split': section.aside?.length }"
         >
           <p v-if="section.eyebrow" class="service-eyebrow">
             {{ section.eyebrow }}
           </p>
-          <h2 v-if="section.title">{{ section.title }}</h2>
+          <h2
+            v-if="section.title"
+            :class="{ 'service-section__title--with-icon': section.icon }"
+          >
+            <img
+              v-if="section.icon"
+              class="service-section__title-icon"
+              :src="section.icon"
+              alt=""
+              aria-hidden="true"
+            />
+            <span>{{ section.title }}</span>
+          </h2>
           <div v-if="section.body?.length" class="service-section__description">
             <ServiceRichText
               v-for="part in section.body"
@@ -117,7 +221,8 @@ function sectionStyle(section: ServiceSection) {
         />
         <ContentCarousel
           v-else-if="
-            ['gallery', 'cases', 'signs'].includes(section.kind) &&
+            (['gallery', 'cases', 'signs'].includes(section.kind) || section.layout === 'horizontal-features') &&
+            !(section.kind === 'cases' && (section.cards?.length || 0) <= 2) &&
             section.cards?.length
           "
           :label="
@@ -126,11 +231,21 @@ function sectionStyle(section: ServiceSection) {
               ? 'AI platform screens'
               : 'Case studies')
           "
+          :bleed="section.bleed || slug === 'online-reputation-monitoring'"
+          :card-width="
+            section.cardWidth ||
+            (slug === 'online-reputation-monitoring'
+              ? section.kind === 'gallery'
+                ? 520
+                : 372
+              : undefined)
+          "
           :columns="
-            section.kind === 'signs' ||
+            (section.columns as 1 | 2 | 3 | 4) ||
+            (section.kind === 'signs' ||
             (section.kind === 'cases' && section.cards.length === 2)
               ? 2
-              : 3
+              : 3)
           "
         >
           <ServiceCards
@@ -139,7 +254,7 @@ function sectionStyle(section: ServiceSection) {
             :cards="[card]"
             :columns="1"
             :kind="section.kind"
-            tone="white"
+            :tone="section.tone || 'white'"
           />
         </ContentCarousel>
         <ServiceCards
@@ -155,7 +270,7 @@ function sectionStyle(section: ServiceSection) {
           aria-label="Platform modules"
         >
           <SiteLink
-            v-for="item in section.items"
+            v-for="(item, moduleIndex) in section.items"
             :key="item"
             href="/risk-control-center"
             :class="{
@@ -166,11 +281,11 @@ function sectionStyle(section: ServiceSection) {
                 (slug === 'digital-risk-protection' &&
                   item === 'Risk Signals & Alerts'),
             }"
-            >{{ item }}</SiteLink
+            ><img v-if="section.moduleIcons?.[moduleIndex]" :src="section.moduleIcons[moduleIndex]" alt="" />{{ item }}</SiteLink
           >
         </nav>
         <div v-if="section.callout" class="service-callout">
-          <h3>{{ section.callout.title }}</h3>
+          <h3><img v-if="section.callout.icon" :src="section.callout.icon" alt="" />{{ section.callout.title }}</h3>
           <ServiceRichText
             v-for="part in section.callout.body"
             :key="part"
@@ -191,13 +306,25 @@ function sectionStyle(section: ServiceSection) {
             :action="action"
           />
         </div>
-        <QuickRequestForm v-if="section.kind === 'form'" />
+        <QuickRequestForm
+          v-if="section.kind === 'form'"
+          :button-width="section.formButtonWidth"
+          :button-label="
+            section.formButtonLabel || (slug === 'online-reputation-monitoring'
+              ? 'Send me relevant cases'
+              : undefined)
+          "
+        />
         <QuestionList
           v-if="section.kind === 'faq'"
           :questions="section.questions || []"
         />
+        <ServiceRichText v-if="section.disclaimer" :html="section.disclaimer" class="service-disclaimer" />
       </div>
     </section>
   </main>
 </template>
 <style src="./service-page.css"></style>
+<style src="./monitoring-page.css"></style>
+<style src="./control-service.css"></style>
+<style src="./defence-service.css"></style>

@@ -256,6 +256,79 @@
 .service-cards--process .service-card {
   min-height: 335px;
 }
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-card {
+  min-height: 468px;
+  padding-bottom: 20px;
+  color: #30362d;
+  gap: 0;
+}
+.service-page--online-reputation-monitoring
+  .service-section--process
+  .service-section__heading
+  + .service-cards {
+  margin-top: 80px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-card__number {
+  height: 28px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+.service-page--online-reputation-monitoring .service-cards--process h3 {
+  min-height: 56px;
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-card:first-child
+  h3 {
+  padding-top: 19px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-card:nth-child(2)
+  h3 {
+  padding-top: 5px;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-card:nth-child(3)
+  h3 {
+  min-height: 0;
+}
+.service-page--online-reputation-monitoring
+  .service-cards--process
+  .service-copy {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+@media (max-width: 1000px) {
+  .service-page--online-reputation-monitoring
+    .service-section--process
+    .service-section__heading
+    + .service-cards {
+    margin-top: 30px;
+  }
+  .service-page--online-reputation-monitoring
+    .service-cards--process
+    .service-card {
+    min-height: 0;
+  }
+  .service-page--online-reputation-monitoring
+    .service-cards--process
+    .service-card
+    h3 {
+    min-height: 0;
+    padding-top: 0;
+  }
+}
 .service-cards--roles .service-card {
   background: white;
   border: 1px solid #e4e4e4;
@@ -407,7 +480,11 @@
   font-weight: 600;
   color: white;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.service-callout h3 img { width: 24px; height: 24px; flex: none; }
 .service-callout a {
   color: #c1d7b3;
 }
@@ -424,6 +501,17 @@
 .service-section--callout h2 {
   font-size: 20px;
   color: white;
+}
+.service-section__title--with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.service-section__title-icon {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 26px;
+  object-fit: contain;
 }
 .service-section--callout .service-section__description {
   max-width: none;
@@ -548,12 +636,41 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  scrollbar-width: none;
 }
 .service-modules a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 12px 24px;
   background: #f4f4f4;
   border-radius: 40px;
+}
+.service-modules a img { width: 20px; height: 20px; object-fit: contain; }
+.service-modules::-webkit-scrollbar { display: none; }
+.service-modules a:focus-visible { outline: 2px solid #606c59; outline-offset: -2px; }
+.service-cards--related .service-card > .action-button {
+  background: #bbc5b4;
+  color: #303030;
+  padding: 6px 14px;
+  min-height: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.service-cards--cases .service-card > .action-button {
+  align-self: stretch;
+  text-align: center;
+  padding: 8px 14px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.service-cards--cases .service-card__eyebrow {
+  align-self: start;
+  background: #f4f8f3;
+  border: 1px solid #e4e4e4;
+  border-radius: 24px;
+  padding: 2px 12px;
+  font-size: 13px;
 }
 .service-modules a.is-active {
   background: #606c59;

@@ -3,6 +3,62 @@ import content from "~/data/solutions.json";
 import "./solutions.css";
 
 const audience = ref<"companies" | "individuals">("companies");
+const situationsTrack = ref<HTMLElement>();
+const atStart = ref(true);
+const atEnd = ref(false);
+const dragging = ref(false);
+let dragStart: { x: number; left: number; pointer: number } | undefined;
+let suppressClick = false;
+let resizeObserver: ResizeObserver | undefined;
+function updateSituations() {
+  const track = situationsTrack.value;
+  if (!track) return;
+  atStart.value = track.scrollLeft <= 2;
+  atEnd.value = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+}
+function moveSituations(direction: number) {
+  const track = situationsTrack.value;
+  if (!track) return;
+  const step = (track.firstElementChild?.getBoundingClientRect().width || 273) + parseFloat(getComputedStyle(track).columnGap || '20');
+  track.scrollBy({ left: direction * step, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+}
+function startDrag(event: PointerEvent) {
+  if (event.pointerType !== 'mouse' || event.button !== 0 || !situationsTrack.value) return;
+  suppressClick = false;
+  dragStart = { x: event.clientX, left: situationsTrack.value.scrollLeft, pointer: event.pointerId };
+}
+function moveDrag(event: PointerEvent) {
+  const track = situationsTrack.value;
+  if (!dragStart || !track) return;
+  const distance = event.clientX - dragStart.x;
+  if (!dragging.value && Math.abs(distance) < 6) return;
+  dragging.value = true;
+  suppressClick = true;
+  track.setPointerCapture(event.pointerId);
+  event.preventDefault();
+  track.scrollLeft = dragStart.left - distance;
+}
+function endDrag() {
+  const track = situationsTrack.value;
+  if (dragStart && track?.hasPointerCapture(dragStart.pointer)) track.releasePointerCapture(dragStart.pointer);
+  dragStart = undefined;
+  dragging.value = false;
+  updateSituations();
+}
+function guardDragClick(event: MouseEvent) {
+  if (!suppressClick) return;
+  event.preventDefault();
+  event.stopPropagation();
+  suppressClick = false;
+}
+onMounted(() => {
+  // Browsers may restore a horizontal offset when returning to this page.
+  situationsTrack.value?.scrollTo({ left: 0, behavior: 'instant' });
+  updateSituations();
+  resizeObserver = new ResizeObserver(updateSituations);
+  if (situationsTrack.value) resizeObserver.observe(situationsTrack.value);
+});
+onBeforeUnmount(() => resizeObserver?.disconnect());
 const groups = computed(() =>
   content.groups.filter((group) => group.audience === audience.value),
 );
@@ -161,11 +217,9 @@ useSeoMeta({
             :href="`#${group.id}`"
             :class="`category-links__card--${index % 3}`"
           >
-            <span class="category-links__icon" aria-hidden="true">{{
-              index === 0 ? "⌾" : index === 1 ? "♙" : "⬡"
-            }}</span>
+            <img class="category-links__icon" :src="'icon' in group ? group.icon : '/images/lock-01.svg'" alt="" />
             <strong>{{ group.title }}</strong>
-            <span>{{ group.description }}</span>
+            <span>{{ 'categoryDescription' in group ? group.categoryDescription : group.description }}</span>
           </a>
         </div>
       </nav>
@@ -207,9 +261,29 @@ useSeoMeta({
       <div class="container situations__heading">
         <p>By Situation</p>
         <h2>Or start from what's happening</h2>
+        <div class="situations__controls" aria-label="Situation navigation">
+          <button type="button" aria-label="Previous situations" aria-controls="situations-track" :disabled="atStart" @click="moveSituations(-1)">←</button>
+          <button type="button" aria-label="Next situations" aria-controls="situations-track" :disabled="atEnd" @click="moveSituations(1)">→</button>
+        </div>
       </div>
       <div
+        ref="situationsTrack"
+        id="situations-track"
         class="situations__track"
+        :class="{ 'is-dragging': dragging }"
+        tabindex="0"
+        role="region"
+        @scroll.passive="updateSituations"
+        @keydown.left.prevent="moveSituations(-1)"
+        @keydown.right.prevent="moveSituations(1)"
+        @pointerdown="startDrag"
+        @pointermove="moveDrag"
+        @pointerup="endDrag"
+        @pointercancel="endDrag"
+        @lostpointercapture="endDrag"
+        @pointerleave="!dragging && endDrag()"
+        @dragstart.prevent
+        @click.capture="guardDragClick"
         aria-label="Choose a solution by situation"
       >
         <SiteLink

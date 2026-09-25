@@ -3,6 +3,13 @@ export interface ServiceAction {
   href: string;
 }
 export interface ServiceCard {
+  backgroundImage?: string;
+  titleSize?: number;
+  titleWeight?: number;
+  titleLineHeight?: number;
+  borderColor?: string;
+  background?: string;
+  color?: string;
   title: string;
   parts: string[];
   eyebrow?: string;
@@ -16,8 +23,26 @@ export interface ServiceCard {
   source?: string;
 }
 export interface ServiceSection {
+  patternImage?: string;
+  formButtonLabel?: string;
+  formButtonWidth?: number;
+  coverHeight?: string;
+  standardCards?: boolean;
+  editorialBody?: boolean;
+  splitTitleFull?: boolean;
+  referenceId?: string;
+  disclaimer?: string;
+  asideImage?: string;
+  moduleIcons?: string[];
+  stackedHeadings?: boolean;
+  copyWidth?: number;
+  asideHeight?: number;
+  bleed?: boolean;
+  cardWidth?: number;
+  layout?: string;
   kind: string;
   title?: string;
+  icon?: string;
   eyebrow?: string;
   body?: string[];
   aside?: string[];
@@ -28,7 +53,7 @@ export interface ServiceSection {
   background: string;
   paddingTop: number;
   paddingBottom: number;
-  callout?: { title: string; body: string[] };
+  callout?: { title: string; body: string[]; icon?: string };
   headings?: string[];
   rows?: string[][];
   items?: string[];
@@ -37,10 +62,18 @@ export interface ServiceSection {
   questions?: { title: string; answer: string }[];
 }
 export interface ServicePageData {
+  theme?: string;
+  newService?: boolean;
+  variant?: string;
   slug: string;
   metaTitle: string;
   description: string;
   hero: {
+    titleWidth?: number;
+    bodyWidth?: number;
+    compact?: boolean;
+    form?: boolean;
+    reviewScale?: string;
     title: string;
     eyebrow: string;
     body: string[];

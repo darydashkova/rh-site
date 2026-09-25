@@ -96,7 +96,12 @@ for (const [name, url] of Object.entries(assets)) {
     await access(`public/images/${name}`);
     continue;
   } catch {}
-  const response = await fetch(url);
+  console.log('Downloading', name);
+  let response;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    try { response = await fetch(url); break; }
+    catch (error) { if (attempt === 2) throw error; }
+  }
   if (!response.ok) throw new Error(`${name}: ${response.status}`);
   await writeFile(
     `public/images/${name}`,

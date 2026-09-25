@@ -18,7 +18,12 @@ function move(direction: number) {
     @keydown.right.prevent="move(1)"
   >
     <div class="service-platform__card">
-      <img src="/images/scan.svg" alt="" width="32" height="32" />
+      <img
+        :src="slide.icon || '/images/scan.svg'"
+        alt=""
+        width="32"
+        height="32"
+      />
       <div aria-live="polite">
         <h3>{{ slide.title }}</h3>
         <ServiceRichText v-for="part in slide.parts" :key="part" :html="part" />

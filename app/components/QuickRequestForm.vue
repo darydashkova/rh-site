@@ -1,4 +1,7 @@
 <script setup lang="ts">
+withDefaults(defineProps<{ buttonLabel?: string; buttonWidth?: number }>(), {
+  buttonLabel: "Submit",
+});
 const submitted = ref(false);
 const id = useId();
 </script>
@@ -10,7 +13,7 @@ const id = useId();
     </p>
     <form v-else @submit.prevent="submitted = true">
       <p>Leave a request and we will contact you as soon as possible</p>
-      <div class="quick-request__fields">
+      <div class="quick-request__fields" :style="buttonWidth ? { '--form-button-width': `${buttonWidth}px` } : undefined">
         <label :for="`${id}-name`"
           >Name<input
             :id="`${id}-name`"
@@ -28,9 +31,8 @@ const id = useId();
             placeholder="mail@example.com"
             required
         /></label>
-        <button type="submit" class="action-button">Submit</button>
+        <button type="submit" class="action-button">{{ buttonLabel }}</button>
       </div>
-      <small>Preview form — no information will be sent.</small>
     </form>
   </div>
 </template>
@@ -44,7 +46,7 @@ const id = useId();
 }
 .quick-request__fields {
   display: grid;
-  grid-template-columns: 1fr 1fr 200px;
+  grid-template-columns: 1fr 1fr var(--form-button-width, 200px);
   gap: 20px;
   align-items: end;
   margin-top: 30px;

@@ -16,7 +16,17 @@ withDefaults(
     :class="[`service-cards--${kind}`, `service-cards--${tone}`]"
     :style="{ '--columns': columns }"
   >
-    <article v-for="(card, index) in cards" :key="index" class="service-card">
+    <article
+      v-for="(card, index) in cards"
+      :key="index"
+      class="service-card"
+      :style="{
+        backgroundColor: card.background,
+        backgroundImage: card.backgroundImage ? `url('${card.backgroundImage}')` : undefined,
+        color: card.color,
+        border: card.borderColor ? `1px solid ${card.borderColor}` : undefined,
+      }"
+    >
       <img
         v-if="card.icon"
         :src="card.icon"
@@ -32,7 +42,11 @@ withDefaults(
       <p v-if="card.eyebrow" class="service-card__eyebrow">
         {{ card.eyebrow }}
       </p>
-      <h3 v-if="card.title">{{ card.title }}</h3>
+      <h3 v-if="card.title" :style="{
+        fontSize: card.titleSize ? `${card.titleSize}px` : undefined,
+        fontWeight: card.titleWeight,
+        lineHeight: card.titleLineHeight,
+      }">{{ card.title }}</h3>
       <ServiceRichText v-if="card.subtitle" :html="card.subtitle" />
       <ServiceRichText
         v-for="(part, partIndex) in card.parts"

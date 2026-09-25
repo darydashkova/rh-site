@@ -16,6 +16,12 @@ const atEnd = ref(false);
 const overflowing = ref(false);
 let observer: ResizeObserver | undefined;
 
+function resetPosition() {
+  if (!track.value) return;
+  track.value.scrollTo({ left: 0, behavior: "instant" });
+  updatePosition();
+}
+
 function updatePosition() {
   if (!track.value) return;
   const { scrollLeft, clientWidth, scrollWidth } = track.value;
@@ -30,8 +36,14 @@ function move(direction: number) {
   const gap = parseFloat(getComputedStyle(track.value).columnGap) || 20;
   const step =
     (first?.getBoundingClientRect().width || track.value.clientWidth) + gap;
-  track.value.scrollBy({
-    left: step * direction,
+  const currentIndex = Math.round(track.value.scrollLeft / step);
+  const lastIndex = Math.max(0, track.value.children.length - 1);
+  const nextIndex = Math.min(
+    lastIndex,
+    Math.max(0, currentIndex + direction),
+  );
+  track.value.scrollTo({
+    left: nextIndex * step,
     behavior: matchMedia("(prefers-reduced-motion: reduce)").matches
       ? "instant"
       : "smooth",
@@ -39,7 +51,10 @@ function move(direction: number) {
 }
 
 onMounted(() => {
-  updatePosition();
+  // Overflow positions can be restored after hydration. Reset once now and
+  // once after layout so every carousel opens exactly on its first card.
+  resetPosition();
+  nextTick(() => requestAnimationFrame(resetPosition));
   observer = new ResizeObserver(updatePosition);
   if (track.value) observer.observe(track.value);
 });

@@ -1,0 +1,123 @@
+.new-service .service-hero__layout { display: block; }
+.new-service .service-hero { padding-top: 100px; padding-bottom: 0; }
+.new-service .service-hero::before { background-image: var(--hero-pattern); background-position: calc(50% + 600px) -470px; background-size: 1000px; opacity: .2; }
+.new-service .service-hero h1 { max-width: var(--hero-title-width, 1160px); margin-top: 48px; }
+.new-service .service-hero__copy > .service-copy { max-width: var(--hero-body-width, 962px); margin-top: 28px; }
+.new-service .service-hero__copy > .action-button { margin-top: 42px; }
+.new-service .service-hero__copy > small { margin-top: 14px; }
+.new-service .service-hero--compact h1 { font-size: 32px; font-weight: 700; }
+.new-service .service-hero--compact .service-hero__copy > .service-copy { font-size: 16px; line-height: 1.2; }
+.service-page--crisis-management-agency .service-hero h1 { margin-top: 68px; }
+.service-page--crisis-management-agency .service-hero__copy > .service-copy { margin-top: 54px; }
+.service-page--crisis-management-agency [data-reference-id="rec2489308401"] .service-card h3 { font-size: 16px !important; font-weight: 400 !important; min-height: 56px; }
+.service-page--online-reputation-repair .monitoring-coverage-five .service-card h3 { font-size: 16px !important; font-weight: 600 !important; }
+.new-service .service-section__heading > h2 { max-width: 1000px; }
+.service-page--brand-protection-services .service-section__heading > h2,
+.service-page--business-media-presence .service-section__heading > h2 { font-size: 44px; font-weight: 400; line-height: 1.2; }
+.new-service .service-section__description { margin-top: 32px; }
+.new-service .service-card { background-size: cover; background-position: center; }
+.new-service .monitoring-coverage-five .service-cards { gap: 16px; }
+.new-service .monitoring-coverage-five .service-card { padding: 20px; border-radius: 16px; }
+.new-service .monitoring-coverage-five .service-card h3 { min-height: 76px; }
+.new-service .monitoring-coverage-five .service-card__icon { margin-bottom: 0; }
+.service-page--online-reputation-repair .monitoring-coverage-five { padding-top: 120px !important; }
+.new-service .monitoring-coverage-five .service-card .service-copy { line-height: 1.45; }
+.service-page--brand-protection-services .monitoring-coverage-five .service-card { min-height: 364px; color: #d4c6c5 !important; }
+.service-page--brand-protection-services .monitoring-coverage-five .service-card h3 { color: #fff; }
+.new-service .monitoring-coverage-five .service-section__heading { border: 0; padding: 0; }
+.new-service .monitoring-coverage-five .service-section__heading h2 { font-size: 28px; }
+.new-service .monitoring-coverage-five .service-section__heading + .service-cards { margin-top: 28px; }
+.service-page--online-reputation-repair .monitoring-coverage-five .service-section__heading + .service-cards { margin-top: 40px; }
+.new-service .monitoring-capped-signs .service-card { background: white !important; color: #464646 !important; border: 1px solid #e7cccc; overflow: hidden; }
+.new-service .monitoring-capped-signs .service-card { position: relative; gap: 24px; }
+.new-service .monitoring-capped-signs .service-card h3 { margin: -24px -24px 0; background: #a26764; color: #464646; padding: 16px 76px 16px 24px; min-height: 80px !important; flex-shrink: 0; font-size: 16px; font-weight: 400; line-height: 1.2; }
+.new-service .monitoring-capped-signs .service-card__icon { position: absolute; right: 24px; top: 20px; width: 24px; height: 24px; margin: 0; }
+.new-service .monitoring-capped-signs .service-copy { line-height: 1.2; }
+.new-service .monitoring-capped-roles .service-card h3 { margin-bottom: 0; }
+.new-service .monitoring-capped-roles .service-card h3 + .service-copy { background: #262626; color: white; margin: -16px -24px 0; padding: 0 24px 20px; min-height: 54px; }
+.new-service .monitoring-crisis-risks .service-card { min-height: 340px; padding: 32px; }
+.new-service .monitoring-crisis-risks .service-card { color: #eee !important; }
+.new-service .monitoring-crisis-risks .service-card:first-child,
+.new-service .monitoring-crisis-risks .service-card:last-child { background-color: #262626 !important; color: #eee !important; }
+.new-service .monitoring-investment .service-card { min-height: 0; }
+.new-service .monitoring-limits .service-card { border-color: #e1b4b1 !important; }
+.new-service .monitoring-limits .service-card h3 { min-height: 0; }
+.control-service .monitoring-limits .service-card::before { margin-bottom: 0; }
+.control-service .monitoring-limits .service-card:has(.service-card__icon)::before { content: none; }
+.control-service .monitoring-limits .service-card__icon { display: block; width: 28px; height: 28px; margin-bottom: 0; }
+.new-service .monitoring-limits .service-card { border-color: #a26764 !important; }
+.new-service .service-cards--related .service-card > .action-button { align-self: stretch; width: 100%; min-height: 54px; font-weight: 600; }
+.new-service .service-cards--related h3 { min-height: 76px; }
+.new-service .service-cards--related .service-copy { margin-bottom: 0; }
+.new-service .monitoring-card-form > .container,
+.new-service .monitoring-pattern-callout > .container,
+.new-service .monitoring-compact-banner > .container { background-image: var(--section-pattern, url('/images/mode-pattern.svg')); background-size: cover; }
+.new-service .monitoring-card-form .service-section__description { margin-top: 16px; }
+.new-service .monitoring-card-form .quick-request__fields { margin-top: 24px; }
+.new-service .monitoring-card-form input { height: 48px; font-size: 15px; }
+.new-service .monitoring-card-form button { min-height: 48px; font-weight: 700; }
+.new-service .monitoring-case-results .service-card h3 { font-size: 16px !important; font-weight: 400 !important; }
+.new-service .monitoring-case-results .service-card__eyebrow { background: #dfecd9; border: 0; letter-spacing: 1px; }
+.new-service .monitoring-case-results .service-card__source { border-top: 1px solid #ccc; padding-top: 16px !important; font-size: 16px; line-height: 1.5; }
+.new-service .monitoring-case-results .service-card__before { min-height: 174px; }
+.new-service .monitoring-case-results .service-card__after { min-height: 230px; flex: 0; }
+.new-service .monitoring-case-results .service-card__before > .service-copy:first-child,
+.new-service .monitoring-case-results .service-card__after > .service-copy:first-child { font-weight: 400; }
+.new-service .monitoring-case-results .service-card__after strong { color: #606c59; }
+.new-service .monitoring-case-results .service-card > .action-button { min-height: 54px; font-weight: 600; }
+.service-page--crisis-management-agency [data-reference-id="rec2489373901"] .carousel { width: 100%; }
+.service-page--crisis-management-agency [data-reference-id="rec2489373901"] .carousel__track { grid-auto-columns: calc((100% - 40px) / 3); }
+.service-page--crisis-management-agency [data-reference-id="rec2489373901"] .service-cards:nth-child(2) .service-card__after strong,
+.service-page--crisis-management-agency [data-reference-id="rec2489373901"] .service-cards:nth-child(3) .service-card__after strong { display: block; font-size: 44px; line-height: 1.2; margin: 16px 0 10px; }
+.service-page--crisis-management-agency [data-reference-id="rec2489374611"] .service-eyebrow,
+.service-page--crisis-management-agency [data-reference-id="rec2489305881"] .service-eyebrow { font-size: 24px; font-weight: 700; color: #333; letter-spacing: 0; }
+.service-page--crisis-management-agency [data-reference-id="rec2489374611"] h2 { font-size: 20px; max-width: none; }
+.service-page--crisis-management-agency [data-reference-id="rec2489305881"] h2 { font-size: 20px; max-width: 280px; }
+.service-page--crisis-management-agency [data-reference-id="rec2489305881"] .service-section__description { align-self: start; margin-top: 20px; }
+.service-page--crisis-management-agency [data-reference-id="rec2489305881"] .service-section__aside { min-height: 300px; }
+.new-service .monitoring-evidence .service-card { background: white; border: 1px solid #ddd; }
+.new-service .monitoring-evidence .service-copy:last-child { margin-top: auto; font-size: 13px; }
+.new-service .monitoring-evidence .service-card h3 { color: #a26764; }
+.new-service .monitoring-inline-heading .service-section__heading { display: flex; justify-content: space-between; align-items: center; border: 0; padding: 0; gap: 24px; }
+.new-service .monitoring-inline-heading .service-section__heading h2 { font-size: 20px; margin: 0; max-width: 600px; }
+.new-service .monitoring-proof-flow .service-card { padding: 32px; }
+.new-service .monitoring-proof-flow .service-card__eyebrow { text-transform: uppercase; }
+.new-service .monitoring-media-cases .service-card__icon { width: 56px; height: 56px; }
+.new-service .monitoring-media-cases .service-copy strong { font-size: 30px; color: #99ad8f; }
+.new-service .monitoring-centered-cta { background: #262626 url('/images/mode-pattern.svg') center / cover; }
+.new-service .monitoring-centered-cta .service-section__heading { max-width: 790px; text-align: center; border: 0; padding: 0; margin-inline: auto; }
+.new-service .monitoring-centered-cta .service-section__heading h2 { font-size: 36px; font-weight: 400; color: white; }
+.new-service .monitoring-centered-cta .service-copy { color: #ddd; line-height: 1.5; }
+.new-service .monitoring-centered-cta .service-actions { justify-content: center; }
+.new-service .monitoring-centered-cta .action-button,
+.new-service .monitoring-compact-banner .action-button { background: white; color: #464646; }
+.new-service .monitoring-compact-banner h2,
+.new-service .monitoring-pattern-callout h2,
+.new-service .monitoring-card-form h2 { font-size: 20px; font-weight: 600; }
+.new-service .service-cards--related .action-button { background: #606c59; color: white; }
+.new-service .service-cards--related .service-card:has(.service-card__eyebrow):has(a[href*="crisis-management-agency"]) .action-button,
+.new-service .service-cards--related .service-card:has(a[href*="online-reputation-repair"]) .action-button,
+.defence-service .service-hero .action-button,
+.defence-service .quick-request button { background: #a26764; color: white; }
+.defence-service .service-section__aside { background-color: #f1d9d7; border-color: #c39592; }
+.defence-service .service-comparison td:last-child,
+.defence-service .service-comparison tbody th:last-child { background: #f7eae9; }
+.defence-service .service-comparison thead th:last-child { background: #d9a3a0; }
+.defence-service .monitoring-capped-roles .service-card__quote { border-color: #d9a3a0; }
+.defence-service .service-card__bullet::before { background: #c39592; }
+.defence-service .monitoring-numbers .service-card h3 { color: #a26764; }
+@media(max-width:1000px){
+ .new-service .service-hero { padding-top: 70px; }
+ .new-service .monitoring-inline-heading .service-section__heading { display: block; }
+ .new-service .monitoring-inline-heading .service-section__heading h2 { margin-top: 24px; }
+}
+@media(max-width:600px){
+ .service-page--crisis-management-agency [data-reference-id="rec2489373901"] .carousel__track { grid-auto-columns: calc(100% - 20px); }
+ .new-service .service-cards--related h3 { min-height: 0; }
+ .new-service .service-hero h1 { font-size: 32px; margin-top: 30px; }
+ .service-page--brand-protection-services .service-section__heading > h2,
+ .service-page--business-media-presence .service-section__heading > h2 { font-size: 28px; }
+ .new-service .monitoring-compact-banner h2,.new-service .monitoring-card-form h2,.new-service .monitoring-pattern-callout h2 { font-size: 20px; }
+ .new-service .monitoring-centered-cta .service-section__heading h2 { font-size: 30px; }
+ .new-service .monitoring-coverage-five .service-card { min-height: 0; }
+}

@@ -18,6 +18,16 @@ const localPages = new Set([
   "/ai-brand-monitoring",
   "/digital-risk-protection",
   "/brand-reputation-services",
+  "/serm-services",
+  "/online-review-management",
+  "/ai-influence-services",
+  "/brand-positioning-services",
+  "/brand-launch-strategy",
+  "/employer-reputation-management",
+  "/brand-protection-services",
+  "/online-reputation-repair",
+  "/crisis-management-agency",
+  "/business-media-presence",
 ]);
 
 export function resolveSiteLink(href: string) {

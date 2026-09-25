@@ -1,0 +1,1 @@
+import fs from'node:fs';const p=JSON.parse(fs.readFileSync('app/data/servicePages.json','utf8'));for(const slug of process.argv.slice(2)){console.log(slug);for(const s of p[slug].sections)console.log(s.referenceId,s.kind,s.layout||'',s.eyebrow||'', '|',s.title||'');}

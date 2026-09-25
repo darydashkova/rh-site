@@ -5,15 +5,19 @@ import { load } from "cheerio";
 
 // Reference HTML is used only at build time to extract editorial content.
 // The website renders native responsive Vue sections, not Tilda markup or scripts.
-const slugs = [
-  "online-reputation-monitoring",
-  "social-listening",
-  "brand-audit",
-  "ai-brand-monitoring",
-  "digital-risk-protection",
-  "brand-reputation-services",
-];
-const assets = {};
+const slugs = process.argv.slice(2).length
+  ? process.argv.slice(2)
+  : [
+      "online-reputation-monitoring",
+      "social-listening",
+      "brand-audit",
+      "ai-brand-monitoring",
+      "digital-risk-protection",
+      "brand-reputation-services",
+    ];
+const assets = JSON.parse(
+  fs.readFileSync("scripts/reference/service-assets.json", "utf8"),
+);
 function asset(url) {
   if (!url || !/^https:\/\/(static|optim)\.tildacdn\.(net|com)\//.test(url))
     return "";
@@ -36,10 +40,16 @@ const override = {
   rec2786087103: { kind: "cases", intro: 3 },
 };
 
-const output = {};
+const output = JSON.parse(
+  fs.readFileSync("app/data/servicePages.json", "utf8"),
+);
 for (const slug of slugs) {
   const $ = load(fs.readFileSync(`scripts/reference/${slug}.html`, "utf8"));
-  const clean = (e) => $(e).text().replace(/\s+/g, " ").trim();
+  const clean = (e) => {
+    const node = $(e).clone();
+    node.find("script,style").remove();
+    return node.text().replace(/\s+/g, " ").trim();
+  };
   function rich(el) {
     if (!el) return "";
     const node = $(el).clone();
@@ -215,6 +225,7 @@ for (const slug of slugs) {
         css.match(/artboard\{[^}]*?background-color:([^;}]+)/) ||
         [])[1] || "#ffffff";
     const base = {
+      referenceId: id,
       background: bg,
       paddingTop: Number((style.match(/padding-top:(\d+)/) || [])[1] || 0),
       paddingBottom: Number(
@@ -260,7 +271,11 @@ for (const slug of slugs) {
     if (!hero) {
       const hi = t.findIndex((e) => $(e).is("h1") || $(e).find("h1").length),
         title = hi >= 0 ? hi : str.findIndex((s) => /Brand Audit &/.test(s));
-      const ei = str.findIndex((s) => /^RH (Detection|Control)/i.test(s));
+      const ei = str.findIndex((s) =>
+        /^(RH (Detection|Control)|Reputation house serm|Reputation Building)/i.test(
+          s,
+        ),
+      );
       const ci = str.findIndex((s) => /covers$/i.test(s));
       const count = slug === "ai-brand-monitoring" ? 4 : 5;
       hero = {

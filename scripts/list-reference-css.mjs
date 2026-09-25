@@ -1,0 +1,1 @@
+import fs from 'node:fs';import{load}from'cheerio';const slug=process.argv[2];const $=load(fs.readFileSync(`scripts/reference/${slug}.html`,'utf8'));console.log($('link[rel="stylesheet"]').toArray().map(e=>$(e).attr('href')));console.log('styles', $('style').length);console.log($('#rec2733488101').find('.tn-molecule').first().prop('outerHTML')?.slice(0,800));

@@ -1,0 +1,1 @@
+import fs from 'node:fs';const p=JSON.parse(fs.readFileSync('app/data/servicePages.json','utf8'));for(const[slug,page]of Object.entries(p))if(page.variant==='control')for(const s of page.sections)if(s.kind==='compare')console.log(slug,s.referenceId,JSON.stringify(s.rows.map(r=>r[0])));

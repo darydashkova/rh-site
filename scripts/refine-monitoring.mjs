@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const file='app/data/servicePages.json';
+const pages=JSON.parse(fs.readFileSync(file,'utf8'));
+const p=pages['online-reputation-monitoring'];
+const names=['signals-heading','signals','visibility','features','comparison','roles','process','platform-heading','platform','ai-heading','ai-gallery','support','cases-heading','client-cases','case-link','case-form','risk-heading','risk-cases','risk-link','limits','explore','investment-heading','investment','pricing-link','audit','related','faq-heading','faq'];
+p.sections.forEach((s,i)=>s.layout=names[i]);
+const gallery=p.sections[10]; gallery.eyebrow=''; gallery.body=[];
+p.sections[19].columns=4; p.sections[19].tone='outlined';
+p.sections[22].tone='investment';
+p.sections[23].eyebrow='';
+p.sections[23].body=['Curious where you\'d land in the range? <a href="/reputation-management-pricing">See how pricing breaks down by region and scope</a>'];
+for(const c of p.sections[25].cards) c.parts=c.parts.filter(v=>v.toLowerCase()!=='learn more');
+for(const i of [14,18]) for(const a of p.sections[i].actions) a.href=a.href.replace('/cases-hub','/case-studies');
+fs.writeFileSync(file,JSON.stringify(pages,null,2)+'\n');
