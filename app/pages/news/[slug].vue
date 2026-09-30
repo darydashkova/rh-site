@@ -120,7 +120,7 @@ useSeoMeta({ title: article.value.seo_title, description: article.value.seo_desc
 .news-figure figcaption { margin-top: 10px; color: #888; font-size: 13px; }
 .news-source { display: inline-block; margin: 12px 0 34px; color: #6d9344; font-size: 14px; }
 .news-author { display: flex; align-items: center; gap: 12px; margin: 30px 0 38px; font-size: 13px; }
-.news-author img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; }
+.news-author img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; object-position: center top; }
 .news-date { display: block; margin-top: 22px; color: #aaa; font-size: 12px; letter-spacing: .03em; }
 @media (max-width: 640px) {
   .news-article { padding: 102px 20px 70px; }
